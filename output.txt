@@ -1,0 +1,2889 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER FROM MorrisBr
+]=]
+
+
+-- Instances: 157 | Scripts: ?? | Modules: ??
+
+local G2L = {}
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+
+--[[
+    Instances:
+--]]
+
+--MainModule
+G2L["0"] = Instance.new("ModuleScript")
+
+--MainModule.hi
+G2L["1"] = Instance.new("ScreenGui")
+
+--MainModule.hi.LocalScript
+G2L["2"] = Instance.new("LocalScript")
+
+--MainModule.hi.ImageLabel
+G2L["3"] = Instance.new("ImageButton")
+
+--MainModule.hi.ImageLabel.LocalScript
+G2L["4"] = Instance.new("LocalScript")
+
+--MainModule.hi.changelog
+G2L["5"] = Instance.new("Frame")
+
+--MainModule.hi.changelog.UICorner
+G2L["6"] = Instance.new("UICorner")
+
+--MainModule.hi.changelog.TextLabel
+G2L["7"] = Instance.new("TextLabel")
+
+--MainModule.hi.changelog.Frame
+G2L["8"] = Instance.new("Frame")
+
+--MainModule.hi.changelog.TextLabel
+G2L["9"] = Instance.new("TextLabel")
+
+--MainModule.hi.changelog.TextLabel
+G2L["10"] = Instance.new("TextLabel")
+
+--MainModule.hi.changelog.TextLabel
+G2L["11"] = Instance.new("TextLabel")
+
+--MainModule.hi.changelog.TextLabel
+G2L["12"] = Instance.new("TextLabel")
+
+--MainModule.hi.changelog.TextLabel
+G2L["13"] = Instance.new("TextLabel")
+
+--MainModule.hi.changelog.TextButton
+G2L["14"] = Instance.new("TextButton")
+
+--MainModule.hi.changelog.TextButton.UICorner
+G2L["15"] = Instance.new("UICorner")
+
+--MainModule.hi.changelog.TextButton.LocalScript
+G2L["16"] = Instance.new("LocalScript")
+
+--MainModule.hi.changelog.TextLabel
+G2L["17"] = Instance.new("TextLabel")
+
+--MainModule.hi.changelog.TextLabel
+G2L["18"] = Instance.new("TextLabel")
+
+--MainModule.hi.thingy
+G2L["19"] = Instance.new("Frame")
+
+--MainModule.hi.thingy.TextLabel1
+G2L["20"] = Instance.new("TextLabel")
+
+--MainModule.hi.thingy.TextLabel2
+G2L["21"] = Instance.new("TextLabel")
+
+--MainModule.hi.thingy.TextLabel3
+G2L["22"] = Instance.new("TextLabel")
+
+--MainModule.hi.thingy.status
+G2L["23"] = Instance.new("TextLabel")
+
+--MainModule.hi.thingy.status.Script
+G2L["24"] = Instance.new("Script")
+
+--MainModule.hi.thingy.Script
+G2L["25"] = Instance.new("Script")
+
+--MainModule.hi.R15TOR6
+G2L["26"] = Instance.new("TextButton")
+
+--MainModule.hi.R15TOR6.R6
+G2L["27"] = Instance.new("ModuleScript")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter
+G2L["28"] = Instance.new("Model")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head
+G2L["29"] = Instance.new("Part")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing
+G2L["30"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing.CharacterSoundEvent
+G2L["31"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming
+G2L["32"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming.CharacterSoundEvent
+G2L["33"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running
+G2L["34"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running.CharacterSoundEvent
+G2L["35"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash
+G2L["36"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash.CharacterSoundEvent
+G2L["37"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing
+G2L["38"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing.CharacterSoundEvent
+G2L["39"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping
+G2L["40"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping.CharacterSoundEvent
+G2L["41"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling
+G2L["42"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling.CharacterSoundEvent
+G2L["43"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died
+G2L["44"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died.CharacterSoundEvent
+G2L["45"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp
+G2L["46"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp.CharacterSoundEvent
+G2L["47"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing
+G2L["48"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing.CharacterSoundEvent
+G2L["49"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming
+G2L["50"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming.CharacterSoundEvent
+G2L["51"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running
+G2L["52"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running.CharacterSoundEvent
+G2L["53"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash
+G2L["54"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash.CharacterSoundEvent
+G2L["55"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing
+G2L["56"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing.CharacterSoundEvent
+G2L["57"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping
+G2L["58"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping.CharacterSoundEvent
+G2L["59"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling
+G2L["60"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling.CharacterSoundEvent
+G2L["61"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died
+G2L["62"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died.CharacterSoundEvent
+G2L["63"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp
+G2L["64"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp.CharacterSoundEvent
+G2L["65"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.CharacterSoundEvent
+G2L["66"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Mesh
+G2L["67"] = Instance.new("SpecialMesh")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.HairAttachment
+G2L["68"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.HatAttachment
+G2L["69"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FaceFrontAttachment
+G2L["70"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FaceCenterAttachment
+G2L["71"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp
+G2L["72"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp.CharacterSoundEvent
+G2L["73"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died
+G2L["74"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died.CharacterSoundEvent
+G2L["75"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling
+G2L["76"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling.CharacterSoundEvent
+G2L["77"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping
+G2L["78"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping.CharacterSoundEvent
+G2L["79"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing
+G2L["80"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing.CharacterSoundEvent
+G2L["81"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash
+G2L["82"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash.CharacterSoundEvent
+G2L["83"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running
+G2L["84"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running.CharacterSoundEvent
+G2L["85"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming
+G2L["86"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming.CharacterSoundEvent
+G2L["87"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing
+G2L["88"] = Instance.new("Sound")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing.CharacterSoundEvent
+G2L["89"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.face
+G2L["90"] = Instance.new("Decal")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso
+G2L["91"] = Instance.new("Part")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.CharacterSoundEvent
+G2L["92"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.roblox
+G2L["93"] = Instance.new("Decal")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.NeckAttachment
+G2L["94"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.BodyFrontAttachment
+G2L["95"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.BodyBackAttachment
+G2L["96"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.LeftCollarAttachment
+G2L["97"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.RightCollarAttachment
+G2L["98"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.WaistFrontAttachment
+G2L["99"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.WaistCenterAttachment
+G2L["100"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.WaistBackAttachment
+G2L["101"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Right Shoulder
+G2L["102"] = Instance.new("Motor6D")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Left Shoulder
+G2L["103"] = Instance.new("Motor6D")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Right Hip
+G2L["104"] = Instance.new("Motor6D")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Left Hip
+G2L["105"] = Instance.new("Motor6D")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Neck
+G2L["106"] = Instance.new("Motor6D")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Arm
+G2L["107"] = Instance.new("Part")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Arm.CharacterSoundEvent
+G2L["108"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Arm.LeftShoulderAttachment
+G2L["109"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Arm.LeftGripAttachment
+G2L["110"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Arm
+G2L["111"] = Instance.new("Part")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Arm.CharacterSoundEvent
+G2L["112"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Arm.RightShoulderAttachment
+G2L["113"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Arm.RightGripAttachment
+G2L["114"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Leg
+G2L["115"] = Instance.new("Part")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Leg.CharacterSoundEvent
+G2L["116"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Leg.LeftFootAttachment
+G2L["117"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Leg
+G2L["118"] = Instance.new("Part")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Leg.CharacterSoundEvent
+G2L["119"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Leg.RightFootAttachment
+G2L["120"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Humanoid
+G2L["121"] = Instance.new("Humanoid")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Humanoid.Animator
+G2L["122"] = Instance.new("Animator")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Humanoid.Respawn
+G2L["123"] = Instance.new("Script")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Humanoid.Jump
+G2L["124"] = Instance.new("LocalScript")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.HumanoidRootPart
+G2L["125"] = Instance.new("Part")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.HumanoidRootPart.CharacterSoundEvent
+G2L["126"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.HumanoidRootPart.RootAttachment
+G2L["127"] = Instance.new("Attachment")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.HumanoidRootPart.RootJoint
+G2L["128"] = Instance.new("Motor6D")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Sound
+G2L["129"] = Instance.new("Script")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Sound.LocalSound
+G2L["130"] = Instance.new("LocalScript")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Health
+G2L["131"] = Instance.new("Script")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate
+G2L["132"] = Instance.new("LocalScript")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle
+G2L["133"] = Instance.new("StringValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle.Animation1
+G2L["134"] = Instance.new("Animation")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle.Animation1.Weight
+G2L["135"] = Instance.new("NumberValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle.Animation2
+G2L["136"] = Instance.new("Animation")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle.Animation2.Weight
+G2L["137"] = Instance.new("NumberValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.walk
+G2L["138"] = Instance.new("StringValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.walk.WalkAnim
+G2L["139"] = Instance.new("Animation")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.run
+G2L["140"] = Instance.new("StringValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.run.RunAnim
+G2L["141"] = Instance.new("Animation")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.jump
+G2L["142"] = Instance.new("StringValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.jump.JumpAnim
+G2L["143"] = Instance.new("Animation")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.climb
+G2L["144"] = Instance.new("StringValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.climb.ClimbAnim
+G2L["145"] = Instance.new("Animation")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.toolnone
+G2L["146"] = Instance.new("StringValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.toolnone.ToolNoneAnim
+G2L["147"] = Instance.new("Animation")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.fall
+G2L["148"] = Instance.new("StringValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.fall.FallAnim
+G2L["149"] = Instance.new("Animation")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.sit
+G2L["150"] = Instance.new("StringValue")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.sit.SitAnim
+G2L["151"] = Instance.new("Animation")
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.ScaleDampeningPercent
+G2L["152"] = Instance.new("NumberValue")
+
+--MainModule.hi.R15TOR6.LocalScript
+G2L["153"] = Instance.new("LocalScript")
+
+--MainModule.hi.R15TOR6.LocalScript.RemoteEvent
+G2L["154"] = Instance.new("RemoteEvent")
+
+--MainModule.hi.R15TOR6.LocalScript.Script
+G2L["155"] = Instance.new("Script")
+
+--MainModule.hi.Put in screen gui
+G2L["156"] = Instance.new("LocalScript")
+
+
+
+--[[
+    Properties:
+--]]
+--MainModule
+G2L["0"].Name = [[MainModule]]
+G2L["0"].Parent = game.Players.LocalPlayer.PlayerGui
+
+--MainModule.hi
+G2L["1"].Name = [[hi]]
+G2L["1"].Enabled = true
+G2L["1"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+G2L["1"].Parent = G2L["0"]
+
+--MainModule.hi.LocalScript
+G2L["2"].Name = [[LocalScript]]
+G2L["2"].Parent = G2L["1"]
+
+--MainModule.hi.ImageLabel
+G2L["3"].Name = [[ImageLabel]]
+G2L["3"].Image = [[http://www.roblox.com/asset/?id=87162794]]
+G2L["3"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["3"].ScaleType = Enum.ScaleType.Stretch
+G2L["3"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["3"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["3"].Active = true
+G2L["3"].AnchorPoint = Vector2.new(0, 0)
+G2L["3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["3"].BackgroundTransparency = 1
+G2L["3"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["3"].BorderSizePixel = 1
+G2L["3"].ClipsDescendants = false
+G2L["3"].Draggable = false
+G2L["3"].Position = UDim2.new(-0.071, 0, 0.436, 0)
+G2L["3"].Rotation = 0
+G2L["3"].Selectable = true
+G2L["3"].SelectionOrder = 0
+G2L["3"].Size = UDim2.new(0, 99, 0, 100)
+G2L["3"].Visible = true
+G2L["3"].ZIndex = 1
+G2L["3"].Parent = G2L["1"]
+
+--MainModule.hi.ImageLabel.LocalScript
+G2L["4"].Name = [[LocalScript]]
+G2L["4"].Parent = G2L["3"]
+
+--MainModule.hi.changelog
+G2L["5"].Name = [[changelog]]
+G2L["5"].Active = false
+G2L["5"].AnchorPoint = Vector2.new(0, 0)
+G2L["5"].BackgroundColor3 = Color3.fromRGB(243.00002, 243.00002, 243.00002)
+G2L["5"].BackgroundTransparency = 0
+G2L["5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["5"].BorderSizePixel = 1
+G2L["5"].ClipsDescendants = false
+G2L["5"].Draggable = false
+G2L["5"].Position = UDim2.new(0.29384696, 0, -0.40777335, 0)
+G2L["5"].Rotation = 0
+G2L["5"].Selectable = false
+G2L["5"].SelectionOrder = 0
+G2L["5"].Size = UDim2.new(0, 555, 0, 223)
+G2L["5"].Visible = false
+G2L["5"].ZIndex = 1
+G2L["5"].Parent = G2L["1"]
+
+--MainModule.hi.changelog.UICorner
+G2L["6"].Name = [[UICorner]]
+G2L["6"].CornerRadius = UDim.new(0, 8)
+G2L["6"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.TextLabel
+G2L["7"].Name = [[TextLabel]]
+G2L["7"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["7"].Text = [[Project Stigma Change Log]]
+G2L["7"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].TextScaled = false
+G2L["7"].TextSize = 18
+G2L["7"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].TextStrokeTransparency = 1
+G2L["7"].TextWrapped = false
+G2L["7"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["7"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["7"].Active = false
+G2L["7"].AnchorPoint = Vector2.new(0, 0)
+G2L["7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["7"].BackgroundTransparency = 1
+G2L["7"].BorderColor3 = Color3.fromRGB(27, 42, 53)
+G2L["7"].BorderSizePixel = 1
+G2L["7"].ClipsDescendants = false
+G2L["7"].Draggable = false
+G2L["7"].Position = UDim2.new(0.3153153, 0, 0, 0)
+G2L["7"].Rotation = 0
+G2L["7"].Selectable = false
+G2L["7"].SelectionOrder = 0
+G2L["7"].Size = UDim2.new(0, 207, 0, 30)
+G2L["7"].Visible = true
+G2L["7"].ZIndex = 1
+G2L["7"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.Frame
+G2L["8"].Name = [[Frame]]
+G2L["8"].Active = false
+G2L["8"].AnchorPoint = Vector2.new(0, 0)
+G2L["8"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["8"].BackgroundTransparency = 0
+G2L["8"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["8"].BorderSizePixel = 0
+G2L["8"].ClipsDescendants = false
+G2L["8"].Draggable = false
+G2L["8"].Position = UDim2.new(0, 0, 0.13452914, 0)
+G2L["8"].Rotation = 0
+G2L["8"].Selectable = false
+G2L["8"].SelectionOrder = 0
+G2L["8"].Size = UDim2.new(0, 555, 0, 6)
+G2L["8"].Visible = true
+G2L["8"].ZIndex = 1
+G2L["8"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.TextLabel
+G2L["9"].Name = [[TextLabel]]
+G2L["9"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["9"].Text = [[-- Login System (External application)]]
+G2L["9"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].TextScaled = false
+G2L["9"].TextSize = 17
+G2L["9"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].TextStrokeTransparency = 1
+G2L["9"].TextWrapped = false
+G2L["9"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["9"].TextYAlignment = Enum.TextYAlignment.Top
+G2L["9"].Active = false
+G2L["9"].AnchorPoint = Vector2.new(0, 0)
+G2L["9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["9"].BackgroundTransparency = 1
+G2L["9"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["9"].BorderSizePixel = 0
+G2L["9"].ClipsDescendants = false
+G2L["9"].Draggable = false
+G2L["9"].Position = UDim2.new(0, 0, 0.16143498, 0)
+G2L["9"].Rotation = 0
+G2L["9"].Selectable = false
+G2L["9"].SelectionOrder = 0
+G2L["9"].Size = UDim2.new(0, 555, 0, 19)
+G2L["9"].Visible = true
+G2L["9"].ZIndex = 1
+G2L["9"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.TextLabel
+G2L["10"].Name = [[TextLabel]]
+G2L["10"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["10"].Text = [[-- New DLL for the Exploit]]
+G2L["10"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["10"].TextScaled = false
+G2L["10"].TextSize = 17
+G2L["10"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["10"].TextStrokeTransparency = 1
+G2L["10"].TextWrapped = false
+G2L["10"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["10"].TextYAlignment = Enum.TextYAlignment.Top
+G2L["10"].Active = false
+G2L["10"].AnchorPoint = Vector2.new(0, 0)
+G2L["10"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["10"].BackgroundTransparency = 1
+G2L["10"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["10"].BorderSizePixel = 0
+G2L["10"].ClipsDescendants = false
+G2L["10"].Draggable = false
+G2L["10"].Position = UDim2.new(0, 0, 0.24663678, 0)
+G2L["10"].Rotation = 0
+G2L["10"].Selectable = false
+G2L["10"].SelectionOrder = 0
+G2L["10"].Size = UDim2.new(0, 555, 0, 19)
+G2L["10"].Visible = true
+G2L["10"].ZIndex = 1
+G2L["10"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.TextLabel
+G2L["11"].Name = [[TextLabel]]
+G2L["11"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["11"].Text = [[-- Added more security]]
+G2L["11"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["11"].TextScaled = false
+G2L["11"].TextSize = 17
+G2L["11"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["11"].TextStrokeTransparency = 1
+G2L["11"].TextWrapped = false
+G2L["11"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["11"].TextYAlignment = Enum.TextYAlignment.Top
+G2L["11"].Active = false
+G2L["11"].AnchorPoint = Vector2.new(0, 0)
+G2L["11"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["11"].BackgroundTransparency = 1
+G2L["11"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["11"].BorderSizePixel = 0
+G2L["11"].ClipsDescendants = false
+G2L["11"].Draggable = false
+G2L["11"].Position = UDim2.new(0, 0, 0.33183858, 0)
+G2L["11"].Rotation = 0
+G2L["11"].Selectable = false
+G2L["11"].SelectionOrder = 0
+G2L["11"].Size = UDim2.new(0, 555, 0, 19)
+G2L["11"].Visible = true
+G2L["11"].ZIndex = 1
+G2L["11"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.TextLabel
+G2L["12"].Name = [[TextLabel]]
+G2L["12"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["12"].Text = [[-- Changed logo and converted it to Button with Change logs]]
+G2L["12"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["12"].TextScaled = false
+G2L["12"].TextSize = 17
+G2L["12"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["12"].TextStrokeTransparency = 1
+G2L["12"].TextWrapped = false
+G2L["12"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["12"].TextYAlignment = Enum.TextYAlignment.Top
+G2L["12"].Active = false
+G2L["12"].AnchorPoint = Vector2.new(0, 0)
+G2L["12"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["12"].BackgroundTransparency = 1
+G2L["12"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["12"].BorderSizePixel = 0
+G2L["12"].ClipsDescendants = false
+G2L["12"].Draggable = false
+G2L["12"].Position = UDim2.new(0, 0, 0.41704038, 0)
+G2L["12"].Rotation = 0
+G2L["12"].Selectable = false
+G2L["12"].SelectionOrder = 0
+G2L["12"].Size = UDim2.new(0, 555, 0, 19)
+G2L["12"].Visible = true
+G2L["12"].ZIndex = 1
+G2L["12"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.TextLabel
+G2L["13"].Name = [[TextLabel]]
+G2L["13"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["13"].Text = [[-- Made Auto convert (Dm the owner to get it lmao)]]
+G2L["13"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].TextScaled = false
+G2L["13"].TextSize = 17
+G2L["13"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].TextStrokeTransparency = 1
+G2L["13"].TextWrapped = false
+G2L["13"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["13"].TextYAlignment = Enum.TextYAlignment.Top
+G2L["13"].Active = false
+G2L["13"].AnchorPoint = Vector2.new(0, 0)
+G2L["13"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["13"].BackgroundTransparency = 1
+G2L["13"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["13"].BorderSizePixel = 0
+G2L["13"].ClipsDescendants = false
+G2L["13"].Draggable = false
+G2L["13"].Position = UDim2.new(0.0018018018, 0, 0.50224215, 0)
+G2L["13"].Rotation = 0
+G2L["13"].Selectable = false
+G2L["13"].SelectionOrder = 0
+G2L["13"].Size = UDim2.new(0, 555, 0, 19)
+G2L["13"].Visible = true
+G2L["13"].ZIndex = 1
+G2L["13"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.TextButton
+G2L["14"].Name = [[TextButton]]
+G2L["14"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["14"].Text = [[Close]]
+G2L["14"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["14"].TextScaled = false
+G2L["14"].TextSize = 14
+G2L["14"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["14"].TextStrokeTransparency = 1
+G2L["14"].TextWrapped = false
+G2L["14"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["14"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["14"].Active = true
+G2L["14"].AnchorPoint = Vector2.new(0, 0)
+G2L["14"].BackgroundColor3 = Color3.fromRGB(232.00002, 232.00002, 232.00002)
+G2L["14"].BackgroundTransparency = 0
+G2L["14"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["14"].BorderSizePixel = 0
+G2L["14"].ClipsDescendants = false
+G2L["14"].Draggable = false
+G2L["14"].Position = UDim2.new(0.9045045, 0, 0, 0)
+G2L["14"].Rotation = 0
+G2L["14"].Selectable = true
+G2L["14"].SelectionOrder = 0
+G2L["14"].Size = UDim2.new(0, 50, 0, 30)
+G2L["14"].Visible = true
+G2L["14"].ZIndex = 1
+G2L["14"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.TextButton.UICorner
+G2L["15"].Name = [[UICorner]]
+G2L["15"].CornerRadius = UDim.new(0, 8)
+G2L["15"].Parent = G2L["14"]
+
+--MainModule.hi.changelog.TextButton.LocalScript
+G2L["16"].Name = [[LocalScript]]
+G2L["16"].Parent = G2L["14"]
+
+--MainModule.hi.changelog.TextLabel
+G2L["17"].Name = [[TextLabel]]
+G2L["17"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["17"].Text = [[-- Again Works Stigma By Yuok And Santiago]]
+G2L["17"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["17"].TextScaled = false
+G2L["17"].TextSize = 17
+G2L["17"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["17"].TextStrokeTransparency = 1
+G2L["17"].TextWrapped = false
+G2L["17"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["17"].TextYAlignment = Enum.TextYAlignment.Top
+G2L["17"].Active = false
+G2L["17"].AnchorPoint = Vector2.new(0, 0)
+G2L["17"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["17"].BackgroundTransparency = 1
+G2L["17"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["17"].BorderSizePixel = 0
+G2L["17"].ClipsDescendants = false
+G2L["17"].Draggable = false
+G2L["17"].Position = UDim2.new(0.0018018018, 0, 0.6143498, 0)
+G2L["17"].Rotation = 0
+G2L["17"].Selectable = false
+G2L["17"].SelectionOrder = 0
+G2L["17"].Size = UDim2.new(0, 555, 0, 19)
+G2L["17"].Visible = true
+G2L["17"].ZIndex = 1
+G2L["17"].Parent = G2L["5"]
+
+--MainModule.hi.changelog.TextLabel
+G2L["18"].Name = [[TextLabel]]
+G2L["18"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["18"].Text = [[-- New DLL]]
+G2L["18"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["18"].TextScaled = false
+G2L["18"].TextSize = 17
+G2L["18"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["18"].TextStrokeTransparency = 1
+G2L["18"].TextWrapped = false
+G2L["18"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["18"].TextYAlignment = Enum.TextYAlignment.Top
+G2L["18"].Active = false
+G2L["18"].AnchorPoint = Vector2.new(0, 0)
+G2L["18"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["18"].BackgroundTransparency = 1
+G2L["18"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["18"].BorderSizePixel = 0
+G2L["18"].ClipsDescendants = false
+G2L["18"].Draggable = false
+G2L["18"].Position = UDim2.new(0.0018018018, 0, 0.7309417, 0)
+G2L["18"].Rotation = 0
+G2L["18"].Selectable = false
+G2L["18"].SelectionOrder = 0
+G2L["18"].Size = UDim2.new(0, 555, 0, 19)
+G2L["18"].Visible = true
+G2L["18"].ZIndex = 1
+G2L["18"].Parent = G2L["5"]
+
+--MainModule.hi.thingy
+G2L["19"].Name = [[thingy]]
+G2L["19"].Active = false
+G2L["19"].AnchorPoint = Vector2.new(0, 0)
+G2L["19"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["19"].BackgroundTransparency = 1
+G2L["19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["19"].BorderSizePixel = 1
+G2L["19"].ClipsDescendants = false
+G2L["19"].Draggable = false
+G2L["19"].Position = UDim2.new(0.0859375, 0, 0.79319286, 0)
+G2L["19"].Rotation = 0
+G2L["19"].Selectable = false
+G2L["19"].SelectionOrder = 0
+G2L["19"].Size = UDim2.new(0, 306, 0, 100)
+G2L["19"].Visible = true
+G2L["19"].ZIndex = 1
+G2L["19"].Parent = G2L["1"]
+
+--MainModule.hi.thingy.TextLabel1
+G2L["20"].Name = [[TextLabel1]]
+G2L["20"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["20"].Text = [[Project Stigma By Lord Kiro, atkn, DU0x96 & Sleepy]]
+G2L["20"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["20"].TextScaled = true
+G2L["20"].TextSize = 13
+G2L["20"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["20"].TextStrokeTransparency = 1
+G2L["20"].TextWrapped = true
+G2L["20"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["20"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["20"].Active = false
+G2L["20"].AnchorPoint = Vector2.new(0, 0)
+G2L["20"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["20"].BackgroundTransparency = 1
+G2L["20"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["20"].BorderSizePixel = 1
+G2L["20"].ClipsDescendants = false
+G2L["20"].Draggable = false
+G2L["20"].Position = UDim2.new(0, 0, 0, 0)
+G2L["20"].Rotation = 0
+G2L["20"].Selectable = false
+G2L["20"].SelectionOrder = 0
+G2L["20"].Size = UDim2.new(0, 306, 0, 18)
+G2L["20"].Visible = true
+G2L["20"].ZIndex = 1
+G2L["20"].Parent = G2L["19"]
+
+--MainModule.hi.thingy.TextLabel2
+G2L["21"].Name = [[TextLabel2]]
+G2L["21"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["21"].Text = [[Use the external program to execute scripts.]]
+G2L["21"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["21"].TextScaled = false
+G2L["21"].TextSize = 17
+G2L["21"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["21"].TextStrokeTransparency = 1
+G2L["21"].TextWrapped = true
+G2L["21"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["21"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["21"].Active = false
+G2L["21"].AnchorPoint = Vector2.new(0, 0)
+G2L["21"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["21"].BackgroundTransparency = 1
+G2L["21"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["21"].BorderSizePixel = 1
+G2L["21"].ClipsDescendants = false
+G2L["21"].Draggable = false
+G2L["21"].Position = UDim2.new(0, 0, 0.53000003, 0)
+G2L["21"].Rotation = 0
+G2L["21"].Selectable = false
+G2L["21"].SelectionOrder = 0
+G2L["21"].Size = UDim2.new(0, 306, 0, 23)
+G2L["21"].Visible = true
+G2L["21"].ZIndex = 1
+G2L["21"].Parent = G2L["19"]
+
+--MainModule.hi.thingy.TextLabel3
+G2L["22"].Name = [[TextLabel3]]
+G2L["22"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["22"].Text = [[Run scripts live without filthy modules or converting!]]
+G2L["22"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["22"].TextScaled = false
+G2L["22"].TextSize = 16
+G2L["22"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["22"].TextStrokeTransparency = 1
+G2L["22"].TextWrapped = true
+G2L["22"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["22"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["22"].Active = false
+G2L["22"].AnchorPoint = Vector2.new(0, 0)
+G2L["22"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["22"].BackgroundTransparency = 1
+G2L["22"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["22"].BorderSizePixel = 0
+G2L["22"].ClipsDescendants = false
+G2L["22"].Draggable = false
+G2L["22"].Position = UDim2.new(0, 0, 0.18, 0)
+G2L["22"].Rotation = 0
+G2L["22"].Selectable = false
+G2L["22"].SelectionOrder = 0
+G2L["22"].Size = UDim2.new(0, 306, 0, 35)
+G2L["22"].Visible = true
+G2L["22"].ZIndex = 1
+G2L["22"].Parent = G2L["19"]
+
+--MainModule.hi.thingy.status
+G2L["23"].Name = [[status]]
+G2L["23"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["23"].Text = [[Status: Injected]]
+G2L["23"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["23"].TextScaled = false
+G2L["23"].TextSize = 18
+G2L["23"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["23"].TextStrokeTransparency = 1
+G2L["23"].TextWrapped = true
+G2L["23"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["23"].TextYAlignment = Enum.TextYAlignment.Bottom
+G2L["23"].Active = false
+G2L["23"].AnchorPoint = Vector2.new(0, 0)
+G2L["23"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["23"].BackgroundTransparency = 1
+G2L["23"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["23"].BorderSizePixel = 1
+G2L["23"].ClipsDescendants = false
+G2L["23"].Draggable = false
+G2L["23"].Position = UDim2.new(0, 0, 0.83, 0)
+G2L["23"].Rotation = 0
+G2L["23"].Selectable = false
+G2L["23"].SelectionOrder = 0
+G2L["23"].Size = UDim2.new(0, 306, 0, 17)
+G2L["23"].Visible = true
+G2L["23"].ZIndex = 1
+G2L["23"].Parent = G2L["19"]
+
+--MainModule.hi.thingy.status.Script
+G2L["24"].Name = [[Script]]
+G2L["24"].Parent = G2L["23"]
+
+--MainModule.hi.thingy.Script
+G2L["25"].Name = [[Script]]
+G2L["25"].Parent = G2L["19"]
+
+--MainModule.hi.R15TOR6
+G2L["26"].Name = [[R15TOR6]]
+G2L["26"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["26"].Text = [[R15 --> R6]]
+G2L["26"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["26"].TextScaled = false
+G2L["26"].TextSize = 23
+G2L["26"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["26"].TextStrokeTransparency = 1
+G2L["26"].TextWrapped = false
+G2L["26"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["26"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["26"].Active = true
+G2L["26"].AnchorPoint = Vector2.new(0, 0)
+G2L["26"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["26"].BackgroundTransparency = 0
+G2L["26"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["26"].BorderSizePixel = 1
+G2L["26"].ClipsDescendants = false
+G2L["26"].Draggable = false
+G2L["26"].Position = UDim2.new(0.008000001, 0, 0.729143, 0)
+G2L["26"].Rotation = 0
+G2L["26"].Selectable = true
+G2L["26"].SelectionOrder = 0
+G2L["26"].Size = UDim2.new(0, 98, 0, 44)
+G2L["26"].Visible = false
+G2L["26"].ZIndex = 1
+G2L["26"].Parent = G2L["1"]
+
+--MainModule.hi.R15TOR6.R6
+G2L["27"].Name = [[R6]]
+G2L["27"].Parent = G2L["26"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter
+G2L["28"].Name = [[DefaultCharacter]]
+G2L["28"].Parent = G2L["27"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head
+G2L["29"].Name = [[Head]]
+G2L["29"].CFrame = CFrame.new(Vector3.new(151.05064, 33.500023, 80.69625), Vector3.new(0.9384173, -0, -0.345504))
+G2L["29"].CanCollide = true
+G2L["29"].CanTouch = true
+G2L["29"].Transparency = 0
+G2L["29"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing
+G2L["30"].Name = [[Climbing]]
+G2L["30"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing.CharacterSoundEvent
+G2L["31"].Name = [[CharacterSoundEvent]]
+G2L["31"].Parent = G2L["30"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming
+G2L["32"].Name = [[Swimming]]
+G2L["32"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming.CharacterSoundEvent
+G2L["33"].Name = [[CharacterSoundEvent]]
+G2L["33"].Parent = G2L["32"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running
+G2L["34"].Name = [[Running]]
+G2L["34"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running.CharacterSoundEvent
+G2L["35"].Name = [[CharacterSoundEvent]]
+G2L["35"].Parent = G2L["34"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash
+G2L["36"].Name = [[Splash]]
+G2L["36"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash.CharacterSoundEvent
+G2L["37"].Name = [[CharacterSoundEvent]]
+G2L["37"].Parent = G2L["36"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing
+G2L["38"].Name = [[Landing]]
+G2L["38"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing.CharacterSoundEvent
+G2L["39"].Name = [[CharacterSoundEvent]]
+G2L["39"].Parent = G2L["38"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping
+G2L["40"].Name = [[Jumping]]
+G2L["40"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping.CharacterSoundEvent
+G2L["41"].Name = [[CharacterSoundEvent]]
+G2L["41"].Parent = G2L["40"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling
+G2L["42"].Name = [[FreeFalling]]
+G2L["42"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling.CharacterSoundEvent
+G2L["43"].Name = [[CharacterSoundEvent]]
+G2L["43"].Parent = G2L["42"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died
+G2L["44"].Name = [[Died]]
+G2L["44"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died.CharacterSoundEvent
+G2L["45"].Name = [[CharacterSoundEvent]]
+G2L["45"].Parent = G2L["44"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp
+G2L["46"].Name = [[GettingUp]]
+G2L["46"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp.CharacterSoundEvent
+G2L["47"].Name = [[CharacterSoundEvent]]
+G2L["47"].Parent = G2L["46"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing
+G2L["48"].Name = [[Climbing]]
+G2L["48"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing.CharacterSoundEvent
+G2L["49"].Name = [[CharacterSoundEvent]]
+G2L["49"].Parent = G2L["48"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming
+G2L["50"].Name = [[Swimming]]
+G2L["50"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming.CharacterSoundEvent
+G2L["51"].Name = [[CharacterSoundEvent]]
+G2L["51"].Parent = G2L["50"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running
+G2L["52"].Name = [[Running]]
+G2L["52"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running.CharacterSoundEvent
+G2L["53"].Name = [[CharacterSoundEvent]]
+G2L["53"].Parent = G2L["52"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash
+G2L["54"].Name = [[Splash]]
+G2L["54"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash.CharacterSoundEvent
+G2L["55"].Name = [[CharacterSoundEvent]]
+G2L["55"].Parent = G2L["54"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing
+G2L["56"].Name = [[Landing]]
+G2L["56"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing.CharacterSoundEvent
+G2L["57"].Name = [[CharacterSoundEvent]]
+G2L["57"].Parent = G2L["56"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping
+G2L["58"].Name = [[Jumping]]
+G2L["58"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping.CharacterSoundEvent
+G2L["59"].Name = [[CharacterSoundEvent]]
+G2L["59"].Parent = G2L["58"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling
+G2L["60"].Name = [[FreeFalling]]
+G2L["60"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling.CharacterSoundEvent
+G2L["61"].Name = [[CharacterSoundEvent]]
+G2L["61"].Parent = G2L["60"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died
+G2L["62"].Name = [[Died]]
+G2L["62"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died.CharacterSoundEvent
+G2L["63"].Name = [[CharacterSoundEvent]]
+G2L["63"].Parent = G2L["62"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp
+G2L["64"].Name = [[GettingUp]]
+G2L["64"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp.CharacterSoundEvent
+G2L["65"].Name = [[CharacterSoundEvent]]
+G2L["65"].Parent = G2L["64"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.CharacterSoundEvent
+G2L["66"].Name = [[CharacterSoundEvent]]
+G2L["66"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Mesh
+G2L["67"].Name = [[Mesh]]
+G2L["67"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.HairAttachment
+G2L["68"].Name = [[HairAttachment]]
+G2L["68"].CFrame = CFrame.new(Vector3.new(0, 0.6, 0), Vector3.new(-0, -0, -1))
+G2L["68"].Visible = false
+G2L["68"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.HatAttachment
+G2L["69"].Name = [[HatAttachment]]
+G2L["69"].CFrame = CFrame.new(Vector3.new(0, 0.6, 0), Vector3.new(-0, -0, -1))
+G2L["69"].Visible = false
+G2L["69"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FaceFrontAttachment
+G2L["70"].Name = [[FaceFrontAttachment]]
+G2L["70"].CFrame = CFrame.new(Vector3.new(0, 0, -0.6), Vector3.new(-0, -0, -1))
+G2L["70"].Visible = false
+G2L["70"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FaceCenterAttachment
+G2L["71"].Name = [[FaceCenterAttachment]]
+G2L["71"].CFrame = CFrame.new(Vector3.new(0, 0, 0), Vector3.new(-0, -0, -1))
+G2L["71"].Visible = false
+G2L["71"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp
+G2L["72"].Name = [[GettingUp]]
+G2L["72"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.GettingUp.CharacterSoundEvent
+G2L["73"].Name = [[CharacterSoundEvent]]
+G2L["73"].Parent = G2L["72"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died
+G2L["74"].Name = [[Died]]
+G2L["74"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Died.CharacterSoundEvent
+G2L["75"].Name = [[CharacterSoundEvent]]
+G2L["75"].Parent = G2L["74"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling
+G2L["76"].Name = [[FreeFalling]]
+G2L["76"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.FreeFalling.CharacterSoundEvent
+G2L["77"].Name = [[CharacterSoundEvent]]
+G2L["77"].Parent = G2L["76"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping
+G2L["78"].Name = [[Jumping]]
+G2L["78"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Jumping.CharacterSoundEvent
+G2L["79"].Name = [[CharacterSoundEvent]]
+G2L["79"].Parent = G2L["78"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing
+G2L["80"].Name = [[Landing]]
+G2L["80"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Landing.CharacterSoundEvent
+G2L["81"].Name = [[CharacterSoundEvent]]
+G2L["81"].Parent = G2L["80"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash
+G2L["82"].Name = [[Splash]]
+G2L["82"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Splash.CharacterSoundEvent
+G2L["83"].Name = [[CharacterSoundEvent]]
+G2L["83"].Parent = G2L["82"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running
+G2L["84"].Name = [[Running]]
+G2L["84"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Running.CharacterSoundEvent
+G2L["85"].Name = [[CharacterSoundEvent]]
+G2L["85"].Parent = G2L["84"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming
+G2L["86"].Name = [[Swimming]]
+G2L["86"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Swimming.CharacterSoundEvent
+G2L["87"].Name = [[CharacterSoundEvent]]
+G2L["87"].Parent = G2L["86"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing
+G2L["88"].Name = [[Climbing]]
+G2L["88"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.Climbing.CharacterSoundEvent
+G2L["89"].Name = [[CharacterSoundEvent]]
+G2L["89"].Parent = G2L["88"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Head.face
+G2L["90"].Name = [[face]]
+G2L["90"].Transparency = 0
+G2L["90"].ZIndex = 1
+G2L["90"].Parent = G2L["29"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso
+G2L["91"].Name = [[Torso]]
+G2L["91"].CFrame = CFrame.new(Vector3.new(151.05064, 32.000023, 80.69625), Vector3.new(0.9384173, -0, -0.345504))
+G2L["91"].CanCollide = true
+G2L["91"].CanTouch = true
+G2L["91"].Transparency = 0
+G2L["91"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.CharacterSoundEvent
+G2L["92"].Name = [[CharacterSoundEvent]]
+G2L["92"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.roblox
+G2L["93"].Name = [[roblox]]
+G2L["93"].Transparency = 0
+G2L["93"].ZIndex = 1
+G2L["93"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.NeckAttachment
+G2L["94"].Name = [[NeckAttachment]]
+G2L["94"].CFrame = CFrame.new(Vector3.new(0, 1, 0), Vector3.new(-0, -0, -1))
+G2L["94"].Visible = false
+G2L["94"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.BodyFrontAttachment
+G2L["95"].Name = [[BodyFrontAttachment]]
+G2L["95"].CFrame = CFrame.new(Vector3.new(0, 0, -0.5), Vector3.new(-0, -0, -1))
+G2L["95"].Visible = false
+G2L["95"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.BodyBackAttachment
+G2L["96"].Name = [[BodyBackAttachment]]
+G2L["96"].CFrame = CFrame.new(Vector3.new(0, 0, 0.5), Vector3.new(-0, -0, -1))
+G2L["96"].Visible = false
+G2L["96"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.LeftCollarAttachment
+G2L["97"].Name = [[LeftCollarAttachment]]
+G2L["97"].CFrame = CFrame.new(Vector3.new(-1, 1, 0), Vector3.new(-0, -0, -1))
+G2L["97"].Visible = false
+G2L["97"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.RightCollarAttachment
+G2L["98"].Name = [[RightCollarAttachment]]
+G2L["98"].CFrame = CFrame.new(Vector3.new(1, 1, 0), Vector3.new(-0, -0, -1))
+G2L["98"].Visible = false
+G2L["98"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.WaistFrontAttachment
+G2L["99"].Name = [[WaistFrontAttachment]]
+G2L["99"].CFrame = CFrame.new(Vector3.new(0, -1, -0.5), Vector3.new(-0, -0, -1))
+G2L["99"].Visible = false
+G2L["99"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.WaistCenterAttachment
+G2L["100"].Name = [[WaistCenterAttachment]]
+G2L["100"].CFrame = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1))
+G2L["100"].Visible = false
+G2L["100"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.WaistBackAttachment
+G2L["101"].Name = [[WaistBackAttachment]]
+G2L["101"].CFrame = CFrame.new(Vector3.new(0, -1, 0.5), Vector3.new(-0, -0, -1))
+G2L["101"].Visible = false
+G2L["101"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Right Shoulder
+G2L["102"].Name = [[Right Shoulder]]
+G2L["102"].Enabled = true
+G2L["102"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Left Shoulder
+G2L["103"].Name = [[Left Shoulder]]
+G2L["103"].Enabled = true
+G2L["103"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Right Hip
+G2L["104"].Name = [[Right Hip]]
+G2L["104"].Enabled = true
+G2L["104"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Left Hip
+G2L["105"].Name = [[Left Hip]]
+G2L["105"].Enabled = true
+G2L["105"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Torso.Neck
+G2L["106"].Name = [[Neck]]
+G2L["106"].Enabled = true
+G2L["106"].Parent = G2L["91"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Arm
+G2L["107"].Name = [[Left Arm]]
+G2L["107"].CFrame = CFrame.new(Vector3.new(150.5324, 32.000023, 79.28863), Vector3.new(0.9384173, -0, -0.345504))
+G2L["107"].CanCollide = false
+G2L["107"].CanTouch = true
+G2L["107"].Transparency = 0
+G2L["107"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Arm.CharacterSoundEvent
+G2L["108"].Name = [[CharacterSoundEvent]]
+G2L["108"].Parent = G2L["107"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Arm.LeftShoulderAttachment
+G2L["109"].Name = [[LeftShoulderAttachment]]
+G2L["109"].CFrame = CFrame.new(Vector3.new(0, 1, 0), Vector3.new(-0, -0, -1))
+G2L["109"].Visible = false
+G2L["109"].Parent = G2L["107"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Arm.LeftGripAttachment
+G2L["110"].Name = [[LeftGripAttachment]]
+G2L["110"].CFrame = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1))
+G2L["110"].Visible = false
+G2L["110"].Parent = G2L["107"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Arm
+G2L["111"].Name = [[Right Arm]]
+G2L["111"].CFrame = CFrame.new(Vector3.new(151.5689, 32.000023, 82.103874), Vector3.new(0.9384173, -0, -0.345504))
+G2L["111"].CanCollide = false
+G2L["111"].CanTouch = true
+G2L["111"].Transparency = 0
+G2L["111"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Arm.CharacterSoundEvent
+G2L["112"].Name = [[CharacterSoundEvent]]
+G2L["112"].Parent = G2L["111"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Arm.RightShoulderAttachment
+G2L["113"].Name = [[RightShoulderAttachment]]
+G2L["113"].CFrame = CFrame.new(Vector3.new(0, 1, 0), Vector3.new(-0, -0, -1))
+G2L["113"].Visible = false
+G2L["113"].Parent = G2L["111"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Arm.RightGripAttachment
+G2L["114"].Name = [[RightGripAttachment]]
+G2L["114"].CFrame = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1))
+G2L["114"].Visible = false
+G2L["114"].Parent = G2L["111"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Leg
+G2L["115"].Name = [[Left Leg]]
+G2L["115"].CFrame = CFrame.new(Vector3.new(150.8779, 30.000023, 80.22704), Vector3.new(0.9384173, -0, -0.345504))
+G2L["115"].CanCollide = false
+G2L["115"].CanTouch = true
+G2L["115"].Transparency = 0
+G2L["115"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Leg.CharacterSoundEvent
+G2L["116"].Name = [[CharacterSoundEvent]]
+G2L["116"].Parent = G2L["115"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Left Leg.LeftFootAttachment
+G2L["117"].Name = [[LeftFootAttachment]]
+G2L["117"].CFrame = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1))
+G2L["117"].Visible = false
+G2L["117"].Parent = G2L["115"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Leg
+G2L["118"].Name = [[Right Leg]]
+G2L["118"].CFrame = CFrame.new(Vector3.new(151.22339, 30.000023, 81.16546), Vector3.new(0.9384173, -0, -0.345504))
+G2L["118"].CanCollide = false
+G2L["118"].CanTouch = true
+G2L["118"].Transparency = 0
+G2L["118"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Leg.CharacterSoundEvent
+G2L["119"].Name = [[CharacterSoundEvent]]
+G2L["119"].Parent = G2L["118"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Right Leg.RightFootAttachment
+G2L["120"].Name = [[RightFootAttachment]]
+G2L["120"].CFrame = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1))
+G2L["120"].Visible = false
+G2L["120"].Parent = G2L["118"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Humanoid
+G2L["121"].Name = [[Humanoid]]
+G2L["121"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Humanoid.Animator
+G2L["122"].Name = [[Animator]]
+G2L["122"].Parent = G2L["121"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Humanoid.Respawn
+G2L["123"].Name = [[Respawn]]
+G2L["123"].Parent = G2L["121"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Humanoid.Jump
+G2L["124"].Name = [[Jump]]
+G2L["124"].Parent = G2L["121"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.HumanoidRootPart
+G2L["125"].Name = [[HumanoidRootPart]]
+G2L["125"].CFrame = CFrame.new(Vector3.new(151.05064, 32.000023, 80.69625), Vector3.new(0.9384173, -0, -0.345504))
+G2L["125"].CanCollide = false
+G2L["125"].CanTouch = true
+G2L["125"].Transparency = 1
+G2L["125"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.HumanoidRootPart.CharacterSoundEvent
+G2L["126"].Name = [[CharacterSoundEvent]]
+G2L["126"].Parent = G2L["125"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.HumanoidRootPart.RootAttachment
+G2L["127"].Name = [[RootAttachment]]
+G2L["127"].CFrame = CFrame.new(Vector3.new(0, 0, 0), Vector3.new(-0, -0, -1))
+G2L["127"].Visible = false
+G2L["127"].Parent = G2L["125"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.HumanoidRootPart.RootJoint
+G2L["128"].Name = [[RootJoint]]
+G2L["128"].Enabled = true
+G2L["128"].Parent = G2L["125"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Sound
+G2L["129"].Name = [[Sound]]
+G2L["129"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Sound.LocalSound
+G2L["130"].Name = [[LocalSound]]
+G2L["130"].Parent = G2L["129"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Health
+G2L["131"].Name = [[Health]]
+G2L["131"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate
+G2L["132"].Name = [[Animate]]
+G2L["132"].Parent = G2L["28"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle
+G2L["133"].Name = [[idle]]
+G2L["133"].Parent = G2L["132"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle.Animation1
+G2L["134"].Name = [[Animation1]]
+G2L["134"].Parent = G2L["133"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle.Animation1.Weight
+G2L["135"].Name = [[Weight]]
+G2L["135"].Parent = G2L["134"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle.Animation2
+G2L["136"].Name = [[Animation2]]
+G2L["136"].Parent = G2L["133"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.idle.Animation2.Weight
+G2L["137"].Name = [[Weight]]
+G2L["137"].Parent = G2L["136"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.walk
+G2L["138"].Name = [[walk]]
+G2L["138"].Parent = G2L["132"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.walk.WalkAnim
+G2L["139"].Name = [[WalkAnim]]
+G2L["139"].Parent = G2L["138"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.run
+G2L["140"].Name = [[run]]
+G2L["140"].Parent = G2L["132"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.run.RunAnim
+G2L["141"].Name = [[RunAnim]]
+G2L["141"].Parent = G2L["140"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.jump
+G2L["142"].Name = [[jump]]
+G2L["142"].Parent = G2L["132"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.jump.JumpAnim
+G2L["143"].Name = [[JumpAnim]]
+G2L["143"].Parent = G2L["142"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.climb
+G2L["144"].Name = [[climb]]
+G2L["144"].Parent = G2L["132"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.climb.ClimbAnim
+G2L["145"].Name = [[ClimbAnim]]
+G2L["145"].Parent = G2L["144"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.toolnone
+G2L["146"].Name = [[toolnone]]
+G2L["146"].Parent = G2L["132"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.toolnone.ToolNoneAnim
+G2L["147"].Name = [[ToolNoneAnim]]
+G2L["147"].Parent = G2L["146"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.fall
+G2L["148"].Name = [[fall]]
+G2L["148"].Parent = G2L["132"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.fall.FallAnim
+G2L["149"].Name = [[FallAnim]]
+G2L["149"].Parent = G2L["148"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.sit
+G2L["150"].Name = [[sit]]
+G2L["150"].Parent = G2L["132"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.sit.SitAnim
+G2L["151"].Name = [[SitAnim]]
+G2L["151"].Parent = G2L["150"]
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate.ScaleDampeningPercent
+G2L["152"].Name = [[ScaleDampeningPercent]]
+G2L["152"].Parent = G2L["132"]
+
+--MainModule.hi.R15TOR6.LocalScript
+G2L["153"].Name = [[LocalScript]]
+G2L["153"].Parent = G2L["26"]
+
+--MainModule.hi.R15TOR6.LocalScript.RemoteEvent
+G2L["154"].Name = [[RemoteEvent]]
+G2L["154"].Parent = G2L["153"]
+
+--MainModule.hi.R15TOR6.LocalScript.Script
+G2L["155"].Name = [[Script]]
+G2L["155"].Parent = G2L["153"]
+
+--MainModule.hi.Put in screen gui
+G2L["156"].Name = [[Put in screen gui]]
+G2L["156"].Parent = G2L["1"]
+
+--[[
+    Scripts
+--]]
+--MainModule
+G2L_MODULES[G2L["0"]] = {
+Closure = function()
+local script = G2L["0"]
+local module = {}
+function module.hi(plr) -- Replace YOURLOADINGTARGET With your load function (in tutorial)
+	local isStudio = game:GetService("RunService"):IsStudio()
+	for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+		if string.sub(string.lower(v.Name), 0, string.len(plr)) == string.lower(plr) then
+			if(isStudio)then -- Checks if they are in studio, if they are they are gonna get jicked
+				print("Anti Exploit Closed!") -- Credits to systemGene#5382 for this
+				script:Destroy()
+			else
+				local gui = script.hi:Clone() -- Place your screengui in the module, replace
+				-- YourScreenGui with your screenGui name, it could be script.IDK:clone()
+				gui.Parent = v:FindFirstChildWhichIsA("PlayerGui")
+			end
+		end
+	end
+end
+return module
+end
+}
+--MainModule.hi.LocalScript
+local function C_G2L_2()
+local script = G2L["2"]
+local info = script.Parent.thingy
+local text1 = script.Parent.thingy.TextLabel1
+local text2 = script.Parent.thingy.TextLabel3
+local text3 = script.Parent.thingy.TextLabel2
+local text4 = script.Parent.thingy.status
+
+
+script.Parent.ImageLabel:TweenPosition(UDim2.new(0.461, 0,0.433, 0))
+wait(2)
+script.Parent.ImageLabel:TweenPosition(UDim2.new(0.008, 0,0.794, 0))
+wait(1)
+script.Parent.R15TOR6.Visible = true
+wait(0.7)
+script.Parent.thingy.BackgroundTransparency = 0.9
+wait(0.1)
+script.Parent.thingy.BackgroundTransparency = 0.8
+wait(0.1)
+script.Parent.thingy.BackgroundTransparency = 0.7
+wait(0.1)
+script.Parent.thingy.BackgroundTransparency = 0.6
+wait(0.1)
+script.Parent.thingy.BackgroundTransparency = 0.5
+wait(0.1)
+script.Parent.thingy.BackgroundTransparency = 0.4
+wait(0.1)
+script.Parent.thingy.BackgroundTransparency = 0.3
+wait(0.1)
+script.Parent.thingy.BackgroundTransparency = 0.2
+wait(0.1)
+script.Parent.thingy.BackgroundTransparency = 0.1
+wait(0.1)
+text1.TextTransparency = 0.9
+wait(0.1)
+text1.TextTransparency = 0.8
+wait(0.1)
+text1.TextTransparency = 0.7
+wait(0.1)
+text1.TextTransparency = 0.6
+wait(0.1)
+text1.TextTransparency = 0.5
+wait(0.1)
+text1.TextTransparency = 0.4
+wait(0.1)
+text1.TextTransparency = 0.3
+wait(0.1)
+text1.TextTransparency = 0.2
+wait(0.1)
+text1.TextTransparency = 0.1
+wait(0.1)
+text1.TextTransparency = 0
+--separe bro
+wait(0.1)
+text2.TextTransparency = 0.9
+wait(0.1)
+text2.TextTransparency = 0.8
+wait(0.1)
+text2.TextTransparency = 0.7
+wait(0.1)
+text2.TextTransparency = 0.6
+wait(0.1)
+text2.TextTransparency = 0.5
+wait(0.1)
+text2.TextTransparency = 0.4
+wait(0.1)
+text2.TextTransparency = 0.3
+wait(0.1)
+text2.TextTransparency = 0.2
+wait(0.1)
+text2.TextTransparency = 0.1
+wait(0.1)
+text2.TextTransparency = 0
+wait(0.1)
+--separe
+text3.TextTransparency = 0.9
+wait(0.1)
+text3.TextTransparency = 0.8
+wait(0.1)
+text3.TextTransparency = 0.7
+wait(0.1)
+text3.TextTransparency = 0.6
+wait(0.1)
+text3.TextTransparency = 0.5
+wait(0.1)
+text3.TextTransparency = 0.4
+wait(0.1)
+text3.TextTransparency = 0.3
+wait(0.1)
+text3.TextTransparency = 0.2
+wait(0.1)
+text3.TextTransparency = 0.1
+wait(0.1)
+text3.TextTransparency = 0
+wait(0.1)
+--separe
+text4.TextTransparency = 0.9
+wait(0.1)
+text4.TextTransparency = 0.8
+wait(0.1)
+text4.TextTransparency = 0.7
+wait(0.1)
+text4.TextTransparency = 0.6
+wait(0.1)
+text4.TextTransparency = 0.5
+wait(0.1)
+text4.TextTransparency = 0.4
+wait(0.1)
+text4.TextTransparency = 0.3
+wait(0.1)
+text4.TextTransparency = 0.2
+wait(0.1)
+text4.TextTransparency = 0.1
+wait(0.1)
+text4.TextTransparency = 0
+
+
+
+
+
+end
+task.spawn(C_G2L_2)
+
+
+--MainModule.hi.ImageLabel.LocalScript
+local function C_G2L_4()
+local script = G2L["4"]
+script.Parent.MouseButton1Click:Connect(function()
+	wait(0.1)
+	script.Parent.Parent.changelog.Visible = true
+	wait(0)
+	script.Parent.Parent.changelog:TweenPosition(UDim2.new(0.283, 0,0.353, 0))
+end)
+end
+task.spawn(C_G2L_4)
+
+
+--MainModule.hi.changelog.TextButton.LocalScript
+local function C_G2L_16()
+local script = G2L["16"]
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent:TweenPosition(UDim2.new(0.283, 0,-0.264, 0))
+	wait(1)
+	script.Parent.Parent.Visible = false
+end)
+end
+task.spawn(C_G2L_16)
+
+
+--MainModule.hi.R15TOR6.R6
+G2L_MODULES[G2L["27"]] = {
+Closure = function()
+local script = G2L["27"]
+local R6Converter = {}
+function R6Converter.load(Plr)
+Plr = game.Players:WaitForChild(Plr)
+local FalseChar = script:WaitForChild("DefaultCharacter"):Clone()
+local PlayersCharacter = game.Players:GetCharacterAppearanceAsync(Plr.UserId):Clone()
+local FaceID = (Plr.Character:WaitForChild("Head"):FindFirstChild("face") or {Texture = "http://www.roblox.com/asset/?id=144080495"}).Texture
+local Accessories = {}
+FalseChar:WaitForChild("Head"):WaitForChild("face").Texture = FaceID
+FalseChar:SetPrimaryPartCFrame(Plr.Character:WaitForChild("HumanoidRootPart").CFrame)
+for _,Prt in pairs(PlayersCharacter:GetDescendants()) do
+if Prt:IsA("Accessory") or Prt:IsA("Hat") or Prt:IsA("BodyColors") or Prt:IsA("CharacterMesh")or Prt:IsA("Pants") or Prt:IsA("Shirt") or Prt:IsA("ShirtGraphic") or Prt:IsA("Tool") then
+table.insert(Accessories,Prt:Clone())
+end
+end
+
+for _,Prt in pairs(Plr.Character:GetChildren()) do
+Prt:Destroy()
+end
+for _,Prt in pairs(FalseChar:GetChildren()) do
+Prt.Parent = Plr.Character
+end
+for _,Prt in pairs(Accessories) do
+Prt.Parent = Plr.Character
+end
+
+
+end
+
+return R6Converter
+
+end
+}
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Humanoid.Jump
+local function C_G2L_124()
+local script = G2L["124"]
+local Mouse = game.Players.LocalPlayer:GetMouse()
+Mouse.KeyDown:connect(function(Key)
+if Key == " " then
+local Active = true
+local Connection = Mouse.KeyUp:connect(function(Key)
+if Key == " " then
+Active = false
+end
+end)
+
+while Active do
+script.Parent.Jump = true
+wait()
+end
+Connection:Disconnect()
+end
+end)
+end
+task.spawn(C_G2L_124)
+
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Sound.LocalSound
+local function C_G2L_130()
+local script = G2L["130"]
+--[[
+	Author: @spotco
+	This script runs locally for the player of the given humanoid.
+	This script triggers humanoid sound play/pause actions locally.
+
+	The Playing/TimePosition properties of Sound objects bypass FilteringEnabled, so this triggers the sound
+	immediately for the player and is replicated to all other players.
+
+	This script is optimized to reduce network traffic through minimizing the amount of property replication.
+]]--
+
+--All sounds are referenced by this ID
+local SFX = {
+	Died = 0;
+	Running = 1;
+	Swimming = 2;
+	Climbing = 3,
+	Jumping = 4;
+	GettingUp = 5;
+	FreeFalling = 6;
+	FallingDown = 7;
+	Landing = 8;
+	Splash = 9;
+}
+
+local useUpdatedLocalSoundFlag = UserSettings():IsUserFeatureEnabled("UserFixCharacterSoundIssues")
+
+local Humanoid = nil
+local Head = nil
+--SFX ID to Sound object
+local Sounds = {}
+local SoundService = game:GetService("SoundService")
+local soundEventFolderName = "DefaultSoundEvents"
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local AddCharacterLoadedEvent = nil
+local RemoveCharacterEvent = nil
+local soundEventFolder = ReplicatedStorage:FindFirstChild(soundEventFolderName)
+local useSoundDispatcher = UserSettings():IsUserFeatureEnabled("UserUseSoundDispatcher")
+
+if useSoundDispatcher then
+	if not soundEventFolder then
+		soundEventFolder = Instance.new("Folder", ReplicatedStorage)
+		soundEventFolder.Name = soundEventFolderName
+		soundEventFolder.Archivable = false
+	end
+	
+	-- Load the RemoveCharacterEvent
+	RemoveCharacterEvent = soundEventFolder:FindFirstChild("RemoveCharacterEvent")
+	if RemoveCharacterEvent == nil then
+		RemoveCharacterEvent = Instance.new("RemoteEvent", soundEventFolder)
+		RemoveCharacterEvent.Name = "RemoveCharacterEvent"
+	end
+
+	AddCharacterLoadedEvent = soundEventFolder:FindFirstChild("AddCharacterLoadedEvent")
+	if AddCharacterLoadedEvent == nil then
+		AddCharacterLoadedEvent = Instance.new("RemoteEvent", soundEventFolder)
+		AddCharacterLoadedEvent.Name = "AddCharacterLoadedEvent"
+	end
+
+	-- Notify the server a new character has been loaded
+	AddCharacterLoadedEvent:FireServer()
+
+	-- Notify the sound dispatcher this character has left.
+	game.Players.LocalPlayer.CharacterRemoving:connect(function(character)
+		RemoveCharacterEvent:FireServer(game.Players.LocalPlayer)
+	end)
+end
+
+do
+	local Figure = script.Parent.Parent
+	Head = Figure:WaitForChild("Head")
+	while not Humanoid do
+		for _,NewHumanoid in pairs(Figure:GetChildren()) do
+			if NewHumanoid:IsA("Humanoid") then
+				Humanoid = NewHumanoid
+				break
+			end
+		end
+		if Humanoid then break end
+		Figure.ChildAdded:wait()
+	end
+	Sounds[SFX.Died] = 			Head:WaitForChild("Died")
+	Sounds[SFX.Running] = 		Head:WaitForChild("Running")
+	Sounds[SFX.Swimming] = 	Head:WaitForChild("Swimming")
+	Sounds[SFX.Climbing] = 	Head:WaitForChild("Climbing")
+	Sounds[SFX.Jumping] = 		Head:WaitForChild("Jumping")
+	Sounds[SFX.GettingUp] = 	Head:WaitForChild("GettingUp")
+	Sounds[SFX.FreeFalling] = 	Head:WaitForChild("FreeFalling")
+	Sounds[SFX.Landing] = 		Head:WaitForChild("Landing")
+	Sounds[SFX.Splash] = 		Head:WaitForChild("Splash")
+
+	local DefaultServerSoundEvent = nil
+	if useSoundDispatcher then
+		DefaultServerSoundEvent = soundEventFolder:FindFirstChild("DefaultServerSoundEvent")
+	else
+		DefaultServerSoundEvent = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultServerSoundEvent")
+	end
+
+	if DefaultServerSoundEvent then
+		DefaultServerSoundEvent.OnClientEvent:connect(function(sound, playing, resetPosition)
+			if resetPosition and sound.TimePosition ~= 0 then
+				sound.TimePosition = 0
+			end
+			if sound.IsPlaying ~= playing then
+				sound.Playing = playing
+			end
+		end)
+	end
+end
+
+local IsSoundFilteringEnabled = function()
+	return game.Workspace.FilteringEnabled and SoundService.RespectFilteringEnabled
+end
+
+local Util
+Util = {
+
+	--Define linear relationship between (pt1x,pt2x) and (pt2x,pt2y). Evaluate this at x.
+	YForLineGivenXAndTwoPts = function(x,pt1x,pt1y,pt2x,pt2y)
+		--(y - y1)/(x - x1) = m
+		local m = (pt1y - pt2y) / (pt1x - pt2x)
+		--float b = pt1.y - m * pt1.x;
+		local b = (pt1y - m * pt1x)
+		return m * x + b
+	end;
+
+	--Clamps the value of "val" between the "min" and "max"
+	Clamp = function(val,min,max)
+		return math.min(max,math.max(min,val))	
+	end;
+
+	--Gets the horizontal (x,z) velocity magnitude of the given part
+	HorizontalSpeed = function(Head)
+		local hVel = Head.Velocity + Vector3.new(0,-Head.Velocity.Y,0)
+		return hVel.magnitude	
+	end;
+
+	--Gets the vertical (y) velocity magnitude of the given part
+	VerticalSpeed = function(Head)
+		return math.abs(Head.Velocity.Y)
+	end;
+
+	--Setting Playing/TimePosition values directly result in less network traffic than Play/Pause/Resume/Stop
+	--If these properties are enabled, use them.
+	Play = function(sound)	
+		if IsSoundFilteringEnabled() then
+			sound.CharacterSoundEvent:FireServer(true, true)
+		end
+		if sound.TimePosition ~= 0 then
+			sound.TimePosition = 0
+		end
+		if not sound.IsPlaying then
+			sound.Playing = true
+		end
+	end;
+
+	Pause = function(sound)
+		if IsSoundFilteringEnabled() then
+			sound.CharacterSoundEvent:FireServer(false, false)
+		end
+		if sound.IsPlaying then
+			sound.Playing = false
+		end
+	end;
+
+	Resume = function(sound)
+		if IsSoundFilteringEnabled() then
+			sound.CharacterSoundEvent:FireServer(true, false)
+		end
+		if not sound.IsPlaying then
+			sound.Playing = true
+		end
+	end;
+
+	Stop = function(sound)
+		if IsSoundFilteringEnabled() then
+			sound.CharacterSoundEvent:FireServer(false, true)
+		end
+		if sound.IsPlaying then
+			sound.Playing = false
+		end
+		if sound.TimePosition ~= 0 then
+			sound.TimePosition = 0
+		end
+	end;
+}
+
+do
+	-- List of all active Looped sounds
+	local playingLoopedSounds = {}
+
+	-- Last seen Enum.HumanoidStateType
+	local activeState = nil
+
+	local fallSpeed = 0
+
+	-- Verify and set that "sound" is in "playingLoopedSounds".
+	function setSoundInPlayingLoopedSounds(sound)
+		for i=1, #playingLoopedSounds do
+			if playingLoopedSounds[i] == sound then
+				return
+			end
+		end	
+		table.insert(playingLoopedSounds,sound)
+	end
+
+	-- Stop all active looped sounds except parameter "except". If "except" is not passed, all looped sounds will be stopped.
+	function stopPlayingLoopedSoundsExcept(except)
+		for i=#playingLoopedSounds,1,-1 do
+			if playingLoopedSounds[i] ~= except then
+				Util.Pause(playingLoopedSounds[i])			
+				table.remove(playingLoopedSounds,i)	
+			end
+		end
+	end
+
+	-- Table of Enum.HumanoidStateType to handling function
+	local stateUpdateHandler = {
+		[Enum.HumanoidStateType.Dead] = function()
+			stopPlayingLoopedSoundsExcept()
+			local sound = Sounds[SFX.Died]
+			Util.Play(sound)
+		end;
+
+		[Enum.HumanoidStateType.RunningNoPhysics] = function(speed)
+			stateUpdated(Enum.HumanoidStateType.Running, speed)
+		end;
+
+		[Enum.HumanoidStateType.Running] = function(speed)	
+			local sound = Sounds[SFX.Running]
+			stopPlayingLoopedSoundsExcept(sound)
+
+			if(useUpdatedLocalSoundFlag and activeState == Enum.HumanoidStateType.Freefall and fallSpeed > 0.1) then
+				-- Play a landing sound if the character dropped from a large distance
+				local vol = math.min(1.0, math.max(0.0, (fallSpeed - 50) / 110))
+				local freeFallSound = Sounds[SFX.FreeFalling]
+				freeFallSound.Volume = vol
+				Util.Play(freeFallSound)
+				fallSpeed = 0
+			end
+			if useUpdatedLocalSoundFlag then
+				if speed ~= nil and speed > 0.5 then
+					Util.Resume(sound)
+					setSoundInPlayingLoopedSounds(sound)
+				elseif speed ~= nil then
+					stopPlayingLoopedSoundsExcept()
+				end
+			else
+				if Util.HorizontalSpeed(Head) > 0.5 then
+					Util.Resume(sound)
+					setSoundInPlayingLoopedSounds(sound)
+				else
+					stopPlayingLoopedSoundsExcept()
+				end
+			end
+		end;
+
+		[Enum.HumanoidStateType.Swimming] = function(speed)
+		local threshold
+		if useUpdatedLocalSoundFlag then threshold = speed else threshold = Util.VerticalSpeed(Head) end
+			if activeState ~= Enum.HumanoidStateType.Swimming and threshold > 0.1 then
+				local splashSound = Sounds[SFX.Splash]
+				splashSound.Volume = Util.Clamp(
+					Util.YForLineGivenXAndTwoPts(
+						Util.VerticalSpeed(Head), 
+						100, 0.28, 
+						350, 1),
+					0,1)
+				Util.Play(splashSound)
+			end
+
+			do
+				local sound = Sounds[SFX.Swimming]
+				stopPlayingLoopedSoundsExcept(sound)
+				Util.Resume(sound)
+				setSoundInPlayingLoopedSounds(sound)
+			end
+		end;
+
+		[Enum.HumanoidStateType.Climbing] = function(speed)
+			local sound = Sounds[SFX.Climbing]
+			if useUpdatedLocalSoundFlag then
+				if speed ~= nil and math.abs(speed) > 0.1 then
+					Util.Resume(sound)
+					stopPlayingLoopedSoundsExcept(sound)
+				else
+					Util.Pause(sound)
+					stopPlayingLoopedSoundsExcept(sound)
+				end		
+			else
+				if Util.VerticalSpeed(Head) > 0.1 then
+					Util.Resume(sound)
+					stopPlayingLoopedSoundsExcept(sound)
+				else
+					stopPlayingLoopedSoundsExcept()
+				end
+			end
+
+			setSoundInPlayingLoopedSounds(sound)
+		end;
+
+		[Enum.HumanoidStateType.Jumping] = function()
+			if activeState == Enum.HumanoidStateType.Jumping then
+				return
+			end		
+			stopPlayingLoopedSoundsExcept()
+			local sound = Sounds[SFX.Jumping]
+			Util.Play(sound)
+		end;
+
+		[Enum.HumanoidStateType.GettingUp] = function()
+			stopPlayingLoopedSoundsExcept()
+			local sound = Sounds[SFX.GettingUp]
+			Util.Play(sound)
+		end;
+
+		[Enum.HumanoidStateType.Freefall] = function()
+			if activeState == Enum.HumanoidStateType.Freefall then
+				return
+			end
+			local sound = Sounds[SFX.FreeFalling]
+			sound.Volume = 0
+			stopPlayingLoopedSoundsExcept()
+
+			fallSpeed = math.max(fallSpeed, math.abs(Head.Velocity.y))
+		end;
+
+		[Enum.HumanoidStateType.FallingDown] = function()
+			stopPlayingLoopedSoundsExcept()
+		end;
+
+		[Enum.HumanoidStateType.Landed] = function()
+			stopPlayingLoopedSoundsExcept()
+			if Util.VerticalSpeed(Head) > 75 then
+				local landingSound = Sounds[SFX.Landing]
+				landingSound.Volume = Util.Clamp(
+					Util.YForLineGivenXAndTwoPts(
+						Util.VerticalSpeed(Head), 
+						50, 0, 
+						100, 1),
+					0,1)
+				Util.Play(landingSound)			
+			end
+		end;
+
+		[Enum.HumanoidStateType.Seated] = function()
+			stopPlayingLoopedSoundsExcept()
+		end;	
+	}
+
+	
+
+	-- Handle state event fired or OnChange fired
+	function stateUpdated(state, speed)
+		if stateUpdateHandler[state] ~= nil then
+			if useUpdatedLocalSoundFlag and (state == Enum.HumanoidStateType.Running 
+				or state == Enum.HumanoidStateType.Climbing
+				or state == Enum.HumanoidStateType.Swimming
+				or state == Enum.HumanoidStateType.RunningNoPhysics) then
+				stateUpdateHandler[state](speed)
+			else
+				stateUpdateHandler[state]()
+			end
+		end
+		activeState = state
+	end
+
+	Humanoid.Died:connect(			function() stateUpdated(Enum.HumanoidStateType.Dead) 			end)
+	Humanoid.Running:connect(		function(speed) stateUpdated(Enum.HumanoidStateType.Running, speed) end)
+	Humanoid.Swimming:connect(		function(speed) stateUpdated(Enum.HumanoidStateType.Swimming, speed) end)
+	Humanoid.Climbing:connect(		function(speed) stateUpdated(Enum.HumanoidStateType.Climbing, speed) end)
+	Humanoid.Jumping:connect(		function() stateUpdated(Enum.HumanoidStateType.Jumping) 		end)
+	Humanoid.GettingUp:connect(		function() stateUpdated(Enum.HumanoidStateType.GettingUp) 		end)
+	Humanoid.FreeFalling:connect(	function() stateUpdated(Enum.HumanoidStateType.Freefall) 		end)
+	Humanoid.FallingDown:connect(	function() stateUpdated(Enum.HumanoidStateType.FallingDown) 	end)
+
+	
+
+	-- required for proper handling of Landed event
+
+	Humanoid.StateChanged:connect(function(old, new)
+		stateUpdated(new)
+	end)
+
+	
+
+	function onUpdate(stepDeltaSeconds, tickSpeedSeconds)
+		local stepScale = stepDeltaSeconds / tickSpeedSeconds
+		do
+			local sound = Sounds[SFX.FreeFalling]
+			if activeState == Enum.HumanoidStateType.Freefall then
+				if Head.Velocity.Y < 0 and Util.VerticalSpeed(Head) > 75 then
+					Util.Resume(sound)
+
+					--Volume takes 1.1 seconds to go from volume 0 to 1
+					local ANIMATION_LENGTH_SECONDS = 1.1
+
+					local normalizedIncrement = tickSpeedSeconds / ANIMATION_LENGTH_SECONDS									
+					sound.Volume = Util.Clamp(sound.Volume + normalizedIncrement * stepScale, 0, 1)
+				else
+					sound.Volume = 0
+				end			
+			else
+				Util.Pause(sound)
+			end
+		end
+
+		do
+			local sound = Sounds[SFX.Running]
+			if activeState == Enum.HumanoidStateType.Running then
+				if Util.HorizontalSpeed(Head) < 0.5 then
+					Util.Pause(sound)
+				end
+			end
+		end		
+	end
+
+	
+	local lastTick = tick()
+	local TICK_SPEED_SECONDS = 0.25
+	while true do
+		onUpdate(tick() - lastTick,TICK_SPEED_SECONDS)
+		lastTick = tick()
+		wait(TICK_SPEED_SECONDS)
+	end
+
+end
+
+end
+task.spawn(C_G2L_130)
+
+
+--MainModule.hi.R15TOR6.R6.DefaultCharacter.Animate
+local function C_G2L_132()
+local script = G2L["132"]
+local Figure = script.Parent
+local Torso = Figure:WaitForChild("Torso")
+local RightShoulder = Torso:WaitForChild("Right Shoulder")
+local LeftShoulder = Torso:WaitForChild("Left Shoulder")
+local RightHip = Torso:WaitForChild("Right Hip")
+local LeftHip = Torso:WaitForChild("Left Hip")
+local Neck = Torso:WaitForChild("Neck")
+local Humanoid = Figure:WaitForChild("Humanoid")
+local pose = "Standing"
+
+local currentAnim = ""
+local currentAnimInstance = nil
+local currentAnimTrack = nil
+local currentAnimKeyframeHandler = nil
+local currentAnimSpeed = 1.0
+local animTable = {}
+local animNames = { 
+	idle = 	{	
+				{ id = "http://www.roblox.com/asset/?id=180435571", weight = 9 },
+				{ id = "http://www.roblox.com/asset/?id=180435792", weight = 1 }
+			},
+	walk = 	{ 	
+				{ id = "http://www.roblox.com/asset/?id=180426354", weight = 10 } 
+			}, 
+	run = 	{
+				{ id = "run.xml", weight = 10 } 
+			}, 
+	jump = 	{
+				{ id = "http://www.roblox.com/asset/?id=125750702", weight = 10 } 
+			}, 
+	fall = 	{
+				{ id = "http://www.roblox.com/asset/?id=180436148", weight = 10 } 
+			}, 
+	climb = {
+				{ id = "http://www.roblox.com/asset/?id=180436334", weight = 10 } 
+			}, 
+	sit = 	{
+				{ id = "http://www.roblox.com/asset/?id=178130996", weight = 10 } 
+			},	
+	toolnone = {
+				{ id = "http://www.roblox.com/asset/?id=182393478", weight = 10 } 
+			},
+	toolslash = {
+				{ id = "http://www.roblox.com/asset/?id=129967390", weight = 10 } 
+--				{ id = "slash.xml", weight = 10 } 
+			},
+	toollunge = {
+				{ id = "http://www.roblox.com/asset/?id=129967478", weight = 10 } 
+			},
+	wave = {
+				{ id = "http://www.roblox.com/asset/?id=128777973", weight = 10 } 
+			},
+	point = {
+				{ id = "http://www.roblox.com/asset/?id=128853357", weight = 10 } 
+			},
+	dance1 = {
+				{ id = "http://www.roblox.com/asset/?id=182435998", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491037", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491065", weight = 10 } 
+			},
+	dance2 = {
+				{ id = "http://www.roblox.com/asset/?id=182436842", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491248", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491277", weight = 10 } 
+			},
+	dance3 = {
+				{ id = "http://www.roblox.com/asset/?id=182436935", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491368", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491423", weight = 10 } 
+			},
+	laugh = {
+				{ id = "http://www.roblox.com/asset/?id=129423131", weight = 10 } 
+			},
+	cheer = {
+				{ id = "http://www.roblox.com/asset/?id=129423030", weight = 10 } 
+			},
+}
+local dances = {"dance1", "dance2", "dance3"}
+
+-- Existance in this list signifies that it is an emote, the value indicates if it is a looping emote
+local emoteNames = { wave = false, point = false, dance1 = true, dance2 = true, dance3 = true, laugh = false, cheer = false}
+
+function configureAnimationSet(name, fileList)
+	if (animTable[name] ~= nil) then
+		for _, connection in pairs(animTable[name].connections) do
+			connection:disconnect()
+		end
+	end
+	animTable[name] = {}
+	animTable[name].count = 0
+	animTable[name].totalWeight = 0	
+	animTable[name].connections = {}
+
+	-- check for config values
+	local config = script:FindFirstChild(name)
+	if (config ~= nil) then
+--		print("Loading anims " .. name)
+		table.insert(animTable[name].connections, config.ChildAdded:connect(function(child) configureAnimationSet(name, fileList) end))
+		table.insert(animTable[name].connections, config.ChildRemoved:connect(function(child) configureAnimationSet(name, fileList) end))
+		local idx = 1
+		for _, childPart in pairs(config:GetChildren()) do
+			if (childPart:IsA("Animation")) then
+				table.insert(animTable[name].connections, childPart.Changed:connect(function(property) configureAnimationSet(name, fileList) end))
+				animTable[name][idx] = {}
+				animTable[name][idx].anim = childPart
+				local weightObject = childPart:FindFirstChild("Weight")
+				if (weightObject == nil) then
+					animTable[name][idx].weight = 1
+				else
+					animTable[name][idx].weight = weightObject.Value
+				end
+				animTable[name].count = animTable[name].count + 1
+				animTable[name].totalWeight = animTable[name].totalWeight + animTable[name][idx].weight
+	--			print(name .. " [" .. idx .. "] " .. animTable[name][idx].anim.AnimationId .. " (" .. animTable[name][idx].weight .. ")")
+				idx = idx + 1
+			end
+		end
+	end
+
+	-- fallback to defaults
+	if (animTable[name].count <= 0) then
+		for idx, anim in pairs(fileList) do
+			animTable[name][idx] = {}
+			animTable[name][idx].anim = Instance.new("Animation")
+			animTable[name][idx].anim.Name = name
+			animTable[name][idx].anim.AnimationId = anim.id
+			animTable[name][idx].weight = anim.weight
+			animTable[name].count = animTable[name].count + 1
+			animTable[name].totalWeight = animTable[name].totalWeight + anim.weight
+--			print(name .. " [" .. idx .. "] " .. anim.id .. " (" .. anim.weight .. ")")
+		end
+	end
+end
+
+-- Setup animation objects
+function scriptChildModified(child)
+	local fileList = animNames[child.Name]
+	if (fileList ~= nil) then
+		configureAnimationSet(child.Name, fileList)
+	end	
+end
+
+script.ChildAdded:connect(scriptChildModified)
+script.ChildRemoved:connect(scriptChildModified)
+
+
+for name, fileList in pairs(animNames) do 
+	configureAnimationSet(name, fileList)
+end	
+
+-- ANIMATION
+
+-- declarations
+local toolAnim = "None"
+local toolAnimTime = 0
+
+local jumpAnimTime = 0
+local jumpAnimDuration = 0.3
+
+local toolTransitionTime = 0.1
+local fallTransitionTime = 0.3
+local jumpMaxLimbVelocity = 0.75
+
+-- functions
+
+function stopAllAnimations()
+	local oldAnim = currentAnim
+
+	-- return to idle if finishing an emote
+	if (emoteNames[oldAnim] ~= nil and emoteNames[oldAnim] == false) then
+		oldAnim = "idle"
+	end
+
+	currentAnim = ""
+	currentAnimInstance = nil
+	if (currentAnimKeyframeHandler ~= nil) then
+		currentAnimKeyframeHandler:disconnect()
+	end
+
+	if (currentAnimTrack ~= nil) then
+		currentAnimTrack:Stop()
+		currentAnimTrack:Destroy()
+		currentAnimTrack = nil
+	end
+	return oldAnim
+end
+
+function setAnimationSpeed(speed)
+	if speed ~= currentAnimSpeed then
+		currentAnimSpeed = speed
+		currentAnimTrack:AdjustSpeed(currentAnimSpeed)
+	end
+end
+
+function keyFrameReachedFunc(frameName)
+	if (frameName == "End") then
+
+		local repeatAnim = currentAnim
+		-- return to idle if finishing an emote
+		if (emoteNames[repeatAnim] ~= nil and emoteNames[repeatAnim] == false) then
+			repeatAnim = "idle"
+		end
+		
+		local animSpeed = currentAnimSpeed
+		playAnimation(repeatAnim, 0.0, Humanoid)
+		setAnimationSpeed(animSpeed)
+	end
+end
+
+-- Preload animations
+function playAnimation(animName, transitionTime, humanoid) 
+		
+	local roll = math.random(1, animTable[animName].totalWeight) 
+	local origRoll = roll
+	local idx = 1
+	while (roll > animTable[animName][idx].weight) do
+		roll = roll - animTable[animName][idx].weight
+		idx = idx + 1
+	end
+--		print(animName .. " " .. idx .. " [" .. origRoll .. "]")
+	local anim = animTable[animName][idx].anim
+
+	-- switch animation		
+	if (anim ~= currentAnimInstance) then
+		
+		if (currentAnimTrack ~= nil) then
+			currentAnimTrack:Stop(transitionTime)
+			currentAnimTrack:Destroy()
+		end
+
+		currentAnimSpeed = 1.0
+	
+		-- load it to the humanoid; get AnimationTrack
+		currentAnimTrack = humanoid:LoadAnimation(anim)
+		currentAnimTrack.Priority = Enum.AnimationPriority.Core
+		 
+		-- play the animation
+		currentAnimTrack:Play(transitionTime)
+		currentAnim = animName
+		currentAnimInstance = anim
+
+		-- set up keyframe name triggers
+		if (currentAnimKeyframeHandler ~= nil) then
+			currentAnimKeyframeHandler:disconnect()
+		end
+		currentAnimKeyframeHandler = currentAnimTrack.KeyframeReached:connect(keyFrameReachedFunc)
+		
+	end
+
+end
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+local toolAnimName = ""
+local toolAnimTrack = nil
+local toolAnimInstance = nil
+local currentToolAnimKeyframeHandler = nil
+
+function toolKeyFrameReachedFunc(frameName)
+	if (frameName == "End") then
+--		print("Keyframe : ".. frameName)	
+		playToolAnimation(toolAnimName, 0.0, Humanoid)
+	end
+end
+
+
+function playToolAnimation(animName, transitionTime, humanoid, priority)	 
+		
+		local roll = math.random(1, animTable[animName].totalWeight) 
+		local origRoll = roll
+		local idx = 1
+		while (roll > animTable[animName][idx].weight) do
+			roll = roll - animTable[animName][idx].weight
+			idx = idx + 1
+		end
+--		print(animName .. " * " .. idx .. " [" .. origRoll .. "]")
+		local anim = animTable[animName][idx].anim
+
+		if (toolAnimInstance ~= anim) then
+			
+			if (toolAnimTrack ~= nil) then
+				toolAnimTrack:Stop()
+				toolAnimTrack:Destroy()
+				transitionTime = 0
+			end
+					
+			-- load it to the humanoid; get AnimationTrack
+			toolAnimTrack = humanoid:LoadAnimation(anim)
+			if priority then
+				toolAnimTrack.Priority = priority
+			end
+			 
+			-- play the animation
+			toolAnimTrack:Play(transitionTime)
+			toolAnimName = animName
+			toolAnimInstance = anim
+
+			currentToolAnimKeyframeHandler = toolAnimTrack.KeyframeReached:connect(toolKeyFrameReachedFunc)
+		end
+end
+
+function stopToolAnimations()
+	local oldAnim = toolAnimName
+
+	if (currentToolAnimKeyframeHandler ~= nil) then
+		currentToolAnimKeyframeHandler:disconnect()
+	end
+
+	toolAnimName = ""
+	toolAnimInstance = nil
+	if (toolAnimTrack ~= nil) then
+		toolAnimTrack:Stop()
+		toolAnimTrack:Destroy()
+		toolAnimTrack = nil
+	end
+
+
+	return oldAnim
+end
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+
+function onRunning(speed)
+	if speed > 0.01 then
+		playAnimation("walk", 0.1, Humanoid)
+		if currentAnimInstance and currentAnimInstance.AnimationId == "http://www.roblox.com/asset/?id=180426354" then
+			setAnimationSpeed(speed / 14.5)
+		end
+		pose = "Running"
+	else
+		if emoteNames[currentAnim] == nil then
+			playAnimation("idle", 0.1, Humanoid)
+			pose = "Standing"
+		end
+	end
+end
+
+function onDied()
+	pose = "Dead"
+end
+
+function onJumping()
+	playAnimation("jump", 0.1, Humanoid)
+	jumpAnimTime = jumpAnimDuration
+	pose = "Jumping"
+end
+
+function onClimbing(speed)
+	playAnimation("climb", 0.1, Humanoid)
+	setAnimationSpeed(speed / 12.0)
+	pose = "Climbing"
+end
+
+function onGettingUp()
+	pose = "GettingUp"
+end
+
+function onFreeFall()
+	if (jumpAnimTime <= 0) then
+		playAnimation("fall", fallTransitionTime, Humanoid)
+	end
+	pose = "FreeFall"
+end
+
+function onFallingDown()
+	pose = "FallingDown"
+end
+
+function onSeated()
+	pose = "Seated"
+end
+
+function onPlatformStanding()
+	pose = "PlatformStanding"
+end
+
+function onSwimming(speed)
+	if speed > 0 then
+		pose = "Running"
+	else
+		pose = "Standing"
+	end
+end
+
+function getTool()	
+	for _, kid in ipairs(Figure:GetChildren()) do
+		if kid.className == "Tool" then return kid end
+	end
+	return nil
+end
+
+function getToolAnim(tool)
+	for _, c in ipairs(tool:GetChildren()) do
+		if c.Name == "toolanim" and c.className == "StringValue" then
+			return c
+		end
+	end
+	return nil
+end
+
+function animateTool()
+	
+	if (toolAnim == "None") then
+		playToolAnimation("toolnone", toolTransitionTime, Humanoid, Enum.AnimationPriority.Idle)
+		return
+	end
+
+	if (toolAnim == "Slash") then
+		playToolAnimation("toolslash", 0, Humanoid, Enum.AnimationPriority.Action)
+		return
+	end
+
+	if (toolAnim == "Lunge") then
+		playToolAnimation("toollunge", 0, Humanoid, Enum.AnimationPriority.Action)
+		return
+	end
+end
+
+function moveSit()
+	RightShoulder.MaxVelocity = 0.15
+	LeftShoulder.MaxVelocity = 0.15
+	RightShoulder:SetDesiredAngle(3.14 /2)
+	LeftShoulder:SetDesiredAngle(-3.14 /2)
+	RightHip:SetDesiredAngle(3.14 /2)
+	LeftHip:SetDesiredAngle(-3.14 /2)
+end
+
+local lastTick = 0
+
+function move(time)
+	local amplitude = 1
+	local frequency = 1
+  	local deltaTime = time - lastTick
+  	lastTick = time
+
+	local climbFudge = 0
+	local setAngles = false
+
+  	if (jumpAnimTime > 0) then
+  		jumpAnimTime = jumpAnimTime - deltaTime
+  	end
+
+	if (pose == "FreeFall" and jumpAnimTime <= 0) then
+		playAnimation("fall", fallTransitionTime, Humanoid)
+	elseif (pose == "Seated") then
+		playAnimation("sit", 0.5, Humanoid)
+		return
+	elseif (pose == "Running") then
+		playAnimation("walk", 0.1, Humanoid)
+	elseif (pose == "Dead" or pose == "GettingUp" or pose == "FallingDown" or pose == "Seated" or pose == "PlatformStanding") then
+--		print("Wha " .. pose)
+		stopAllAnimations()
+		amplitude = 0.1
+		frequency = 1
+		setAngles = true
+	end
+
+	if (setAngles) then
+		local desiredAngle = amplitude * math.sin(time * frequency)
+
+		RightShoulder:SetDesiredAngle(desiredAngle + climbFudge)
+		LeftShoulder:SetDesiredAngle(desiredAngle - climbFudge)
+		RightHip:SetDesiredAngle(-desiredAngle)
+		LeftHip:SetDesiredAngle(-desiredAngle)
+	end
+
+	-- Tool Animation handling
+	local tool = getTool()
+	if tool and tool:FindFirstChild("Handle") then
+	
+		local animStringValueObject = getToolAnim(tool)
+
+		if animStringValueObject then
+			toolAnim = animStringValueObject.Value
+			-- message recieved, delete StringValue
+			animStringValueObject.Parent = nil
+			toolAnimTime = time + .3
+		end
+
+		if time > toolAnimTime then
+			toolAnimTime = 0
+			toolAnim = "None"
+		end
+
+		animateTool()		
+	else
+		stopToolAnimations()
+		toolAnim = "None"
+		toolAnimInstance = nil
+		toolAnimTime = 0
+	end
+end
+
+-- connect events
+Humanoid.Died:connect(onDied)
+Humanoid.Running:connect(onRunning)
+Humanoid.Jumping:connect(onJumping)
+Humanoid.Climbing:connect(onClimbing)
+Humanoid.GettingUp:connect(onGettingUp)
+Humanoid.FreeFalling:connect(onFreeFall)
+Humanoid.FallingDown:connect(onFallingDown)
+Humanoid.Seated:connect(onSeated)
+Humanoid.PlatformStanding:connect(onPlatformStanding)
+Humanoid.Swimming:connect(onSwimming)
+
+-- setup emote chat hook
+game:GetService("Players").LocalPlayer.Chatted:connect(function(msg)
+	local emote = ""
+	if msg == "/e dance" then
+		emote = dances[math.random(1, #dances)]
+	elseif (string.sub(msg, 1, 3) == "/e ") then
+		emote = string.sub(msg, 4)
+	elseif (string.sub(msg, 1, 7) == "/emote ") then
+		emote = string.sub(msg, 8)
+	end
+	
+	if (pose == "Standing" and emoteNames[emote] ~= nil) then
+		playAnimation(emote, 0.1, Humanoid)
+	end
+
+end)
+
+
+-- main program
+
+-- initialize to idle
+playAnimation("idle", 0.1, Humanoid)
+pose = "Standing"
+
+while Figure.Parent ~= nil do
+	local _, time = wait(0.1)
+	move(time)
+end
+
+
+
+end
+task.spawn(C_G2L_132)
+
+
+--MainModule.hi.R15TOR6.LocalScript
+local function C_G2L_153()
+local script = G2L["153"]
+script.Parent.MouseButton1Click:Connect(function()
+script.RemoteEvent:FireServer()
+end)
+end
+task.spawn(C_G2L_153)
+
+
+--MainModule.hi.Put in screen gui
+local function C_G2L_156()
+local script = G2L["156"]
+local player = game.Players.LocalPlayer
+
+local users = {"No_232342",
+	"anonimoushack12",
+	"Synapse_serve"
+}
+
+local isUser = false
+
+local gui = script.Parent
+
+for i,name in pairs(users) do
+	if player.Name == name then
+		isUser = true
+	end
+end
+
+if not isUser then
+	gui.Enabled = false
+end
+end
+task.spawn(C_G2L_156)
+
+
+
+return G2L["0"], require;
