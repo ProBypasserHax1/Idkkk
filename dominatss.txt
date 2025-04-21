@@ -10386,7 +10386,7 @@ task.spawn(C_G2L_186)
 local function C_G2L_189()
 local script = G2L["189"]
 script.Parent.MouseButton1Click:connect(function()
-	script.ServerEvent:FireServer()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%20c00lgui"))()
 end) 
 end
 task.spawn(C_G2L_189)
@@ -10416,7 +10416,7 @@ task.spawn(C_G2L_199)
 local function C_G2L_204()
 local script = G2L["204"]
 script.Parent.MouseButton1Click:connect(function()
-	script.ServerEvent:FireServer()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ProBypasserHax1/Idkkk/refs/heads/main/Grab%20Knife.txt"))()
 end) 
 end
 task.spawn(C_G2L_204)
@@ -10436,7 +10436,7 @@ task.spawn(C_G2L_209)
 local function C_G2L_214()
 local script = G2L["214"]
 script.Parent.MouseButton1Click:connect(function()
-	script.ServerEvent:FireServer()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ProBypasserHax1/Idkkk/refs/heads/main/SSP%20BY%20ME.lua"))()
 end) 
 end
 task.spawn(C_G2L_214)
@@ -10446,7 +10446,7 @@ task.spawn(C_G2L_214)
 local function C_G2L_219()
 local script = G2L["219"]
 script.Parent.MouseButton1Click:connect(function()
-	script.ServerEvent:FireServer()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/c-1-23/c-1-23/refs/heads/main/T0PK3K%205.0%20SS%20Edition"))()
 end) 
 end
 task.spawn(C_G2L_219)
@@ -10456,7 +10456,7 @@ task.spawn(C_G2L_219)
 local function C_G2L_224()
 local script = G2L["224"]
 script.Parent.MouseButton1Click:connect(function()
-	script.ServerEvent:FireServer()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MariyaFurmanova/Library/main/un_InfYield", true))()
 end) 
 end
 task.spawn(C_G2L_224)
@@ -10466,7 +10466,7 @@ task.spawn(C_G2L_224)
 local function C_G2L_230()
 local script = G2L["230"]
 script.Parent.MouseButton1Click:connect(function()
-	script.ServerEvent:FireServer()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/johndoe", true))()
 end) 
 end
 task.spawn(C_G2L_230)
@@ -10476,7 +10476,7 @@ task.spawn(C_G2L_230)
 local function C_G2L_235()
 local script = G2L["235"]
 script.Parent.MouseButton1Click:connect(function()
-	script.ServerEvent:FireServer()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%20T0PK3K%20V3"))()
 end) 
 end
 task.spawn(C_G2L_235)
