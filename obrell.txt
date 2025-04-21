@@ -1,0 +1,293 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER FROM MorrisBr
+]=]
+
+
+-- Instances: 11 | Scripts: ?? | Modules: ??
+
+local G2L = {}
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+
+--[[
+    Instances:
+--]]
+
+--MainModule
+G2L["0"] = Instance.new("ModuleScript")
+
+--MainModule.Chat_
+G2L["1"] = Instance.new("ScreenGui")
+
+--MainModule.Chat_.obama
+G2L["2"] = Instance.new("ImageLabel")
+
+--MainModule.Chat_.obunga
+G2L["3"] = Instance.new("ImageLabel")
+
+--MainModule.Chat_.LocalScript
+G2L["4"] = Instance.new("LocalScript")
+
+--MainModule.Chat_.help
+G2L["5"] = Instance.new("ImageLabel")
+
+--MainModule.Chat_.static
+G2L["6"] = Instance.new("Sound")
+
+--MainModule.Chat_.nope
+G2L["7"] = Instance.new("Sound")
+
+--MainModule.Chat_.nope2
+G2L["8"] = Instance.new("Sound")
+
+--MainModule.Chat_.os
+G2L["9"] = Instance.new("StringValue")
+
+--MainModule.Chat_.TextLabel
+G2L["10"] = Instance.new("TextLabel")
+
+
+
+--[[
+    Properties:
+--]]
+--MainModule
+G2L["0"].Name = [[MainModule]]
+G2L["0"].Parent = game.Players.LocalPlayer.PlayerGui
+
+--MainModule.Chat_
+G2L["1"].Name = [[Chat_]]
+G2L["1"].Enabled = true
+G2L["1"].ZIndexBehavior = Enum.ZIndexBehavior.Global
+G2L["1"].Parent = G2L["0"]
+
+--MainModule.Chat_.obama
+G2L["2"].Name = [[obama]]
+G2L["2"].Image = [[rbxassetid://5643866]]
+G2L["2"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["2"].ScaleType = Enum.ScaleType.Stretch
+G2L["2"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["2"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["2"].Active = false
+G2L["2"].AnchorPoint = Vector2.new(0, 0)
+G2L["2"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["2"].BackgroundTransparency = 0
+G2L["2"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["2"].BorderSizePixel = 1
+G2L["2"].ClipsDescendants = false
+G2L["2"].Draggable = false
+G2L["2"].Position = UDim2.new(0, 0, 0, 0)
+G2L["2"].Rotation = 0
+G2L["2"].Selectable = false
+G2L["2"].SelectionOrder = 0
+G2L["2"].Size = UDim2.new(1, 0, 1, 0)
+G2L["2"].Visible = false
+G2L["2"].ZIndex = 1
+G2L["2"].Parent = G2L["1"]
+
+--MainModule.Chat_.obunga
+G2L["3"].Name = [[obunga]]
+G2L["3"].Image = [[rbxassetid://15603607126]]
+G2L["3"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["3"].ScaleType = Enum.ScaleType.Stretch
+G2L["3"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["3"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["3"].Active = false
+G2L["3"].AnchorPoint = Vector2.new(0, 0)
+G2L["3"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].BackgroundTransparency = 1
+G2L["3"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["3"].BorderSizePixel = 1
+G2L["3"].ClipsDescendants = false
+G2L["3"].Draggable = false
+G2L["3"].Position = UDim2.new(0, 0, 0, 0)
+G2L["3"].Rotation = 0
+G2L["3"].Selectable = false
+G2L["3"].SelectionOrder = 0
+G2L["3"].Size = UDim2.new(1, 0, 1, 0)
+G2L["3"].Visible = true
+G2L["3"].ZIndex = 1
+G2L["3"].Parent = G2L["1"]
+
+--MainModule.Chat_.LocalScript
+G2L["4"].Name = [[LocalScript]]
+G2L["4"].Parent = G2L["1"]
+
+--MainModule.Chat_.help
+G2L["5"].Name = [[help]]
+G2L["5"].Image = [[rbxassetid://2050833946]]
+G2L["5"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["5"].ScaleType = Enum.ScaleType.Stretch
+G2L["5"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["5"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["5"].Active = false
+G2L["5"].AnchorPoint = Vector2.new(0, 0)
+G2L["5"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["5"].BackgroundTransparency = 1
+G2L["5"].BorderColor3 = Color3.fromRGB(27.000002, 42, 53.000004)
+G2L["5"].BorderSizePixel = 1
+G2L["5"].ClipsDescendants = false
+G2L["5"].Draggable = false
+G2L["5"].Position = UDim2.new(0, 0, 0, 0)
+G2L["5"].Rotation = 0
+G2L["5"].Selectable = false
+G2L["5"].SelectionOrder = 0
+G2L["5"].Size = UDim2.new(1, 0, 1, 0)
+G2L["5"].Visible = true
+G2L["5"].ZIndex = 0
+G2L["5"].Parent = G2L["1"]
+
+--MainModule.Chat_.static
+G2L["6"].Name = [[static]]
+G2L["6"].Parent = G2L["1"]
+
+--MainModule.Chat_.nope
+G2L["7"].Name = [[nope]]
+G2L["7"].Parent = G2L["1"]
+
+--MainModule.Chat_.nope2
+G2L["8"].Name = [[nope2]]
+G2L["8"].Parent = G2L["1"]
+
+--MainModule.Chat_.os
+G2L["9"].Name = [[os]]
+G2L["9"].Parent = G2L["1"]
+
+--MainModule.Chat_.TextLabel
+G2L["10"].Name = [[TextLabel]]
+G2L["10"].FontFace = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["10"].Text = [[Label]]
+G2L["10"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["10"].TextScaled = true
+G2L["10"].TextSize = 14
+G2L["10"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["10"].TextStrokeTransparency = 1
+G2L["10"].TextWrapped = true
+G2L["10"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["10"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["10"].Active = false
+G2L["10"].AnchorPoint = Vector2.new(0, 0)
+G2L["10"].BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+G2L["10"].BackgroundTransparency = 0.6
+G2L["10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["10"].BorderSizePixel = 0
+G2L["10"].ClipsDescendants = false
+G2L["10"].Draggable = false
+G2L["10"].Position = UDim2.new(0, 0, 0, 0)
+G2L["10"].Rotation = 0
+G2L["10"].Selectable = false
+G2L["10"].SelectionOrder = 0
+G2L["10"].Size = UDim2.new(1, 0, 0.06532663, 0)
+G2L["10"].Visible = true
+G2L["10"].ZIndex = 1
+G2L["10"].Parent = G2L["1"]
+
+--[[
+    Scripts
+--]]
+--MainModule
+G2L_MODULES[G2L["0"]] = {
+Closure = function()
+local script = G2L["0"]
+local module = {}
+
+function module.s(target)
+	_G.target = target
+	local target = game.Players:WaitForChild(_G.target)
+	script.Chat_:Clone().Parent = target.PlayerGui
+end
+return module   
+
+
+end
+}
+--MainModule.Chat_.LocalScript
+local function C_G2L_4()
+local script = G2L["4"]
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
+game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()
+local text = "OBAMA IS HERE YOU CANT RUN OR HIDE. OBAMA WONT MERCY YOU @SMALLSIGMA2000 (SILENTERASED) JOINED THIS SERVER"
+script.Parent.TextLabel.Text = ""
+for i = 1, string.len(text) do
+	script.Parent.TextLabel.Text = string.sub(text, 1, i)
+	wait(".01")
+end
+wait("2")
+for i = 1, string.len(text) do
+	script.Parent.TextLabel.Text = string.sub(text, 1, -i)
+	wait(".01")
+end
+script.Parent.TextLabel.Visible = false
+script.Parent:WaitForChild("obama").Visible = true;
+game:GetService("Players").LocalPlayer.PlayerGui:SetTopbarTransparency(0);
+script.Parent:WaitForChild("nope"):Play();
+while true do
+	wait("3.8");
+	if script.Parent.nope.TimePosition >= 0 then
+		break;
+	end;
+end;
+for v1 = 1, 10 do
+	script.Parent.obama.ImageTransparency = script.Parent.obama.ImageTransparency + 0.1;
+	wait("");
+end;
+script.Parent.obama.ZIndex = 0;
+while true do
+	wait("7.5");
+	if script.Parent.nope.TimePosition >= 0 then
+		break;
+	end;
+end;
+for v2 = 1, 100 do
+	script.Parent.obunga.ImageTransparency = script.Parent.obunga.ImageTransparency - 0.1;
+	wait(".01");
+end;
+wait("0")
+script.Parent.help.ImageTransparency = 0;
+while true do
+	wait("");
+	if script.Parent.nope.TimePosition >= 0 then
+		break;
+	end;
+end;
+script.Parent.nope2:Play();
+spawn(function()
+	while script.Parent.nope2.Playing == true do
+		wait(math.random(1, 7));
+		script.Parent.static:Play();
+		script.Parent.help.ZIndex = 2;
+		wait(".3");
+		script.Parent.help.ZIndex = 0;
+		script.Parent.static:Stop();	
+	end;
+end);
+wait(30)
+game.Players.LocalPlayer:Kick()
+end
+task.spawn(C_G2L_4)
+
+
+
+return G2L["0"], require;
