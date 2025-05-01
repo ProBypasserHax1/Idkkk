@@ -1,0 +1,137 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Chat_ = Instance.new("ScreenGui")
+local obama = Instance.new("ImageLabel")
+local obunga = Instance.new("ImageLabel")
+local help = Instance.new("ImageLabel")
+local nope = Instance.new("Sound")
+local nope2 = Instance.new("Sound")
+local static = Instance.new("Sound")
+
+--Properties:
+
+Chat_.Name = "Chat_"
+Chat_.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Chat_.DisplayOrder = 3
+Chat_.ResetOnSpawn = false
+
+obama.Name = "obama"
+obama.Parent = Chat_
+obama.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+obama.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obama.Size = UDim2.new(1, 0, 1, 0)
+obama.Image = "rbxassetid://5643866"
+
+obunga.Name = "obunga"
+obunga.Parent = Chat_
+obunga.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+obunga.BackgroundTransparency = 1.000
+obunga.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obunga.Size = UDim2.new(1, 0, 1, 0)
+obunga.Image = "rbxassetid://15603607126"
+obunga.ImageTransparency = 1.000
+
+help.Name = "help"
+help.Parent = Chat_
+help.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+help.BackgroundTransparency = 1.000
+help.BorderColor3 = Color3.fromRGB(27, 42, 53)
+help.Size = UDim2.new(1, 0, 1, 0)
+help.ZIndex = 0
+help.Image = "rbxassetid://2050833946"
+help.ImageTransparency = 1.000
+
+nope.Name = "nope"
+nope.Parent = Chat_
+nope.SoundId = "rbxassetid://9072304992"
+nope.Looped = false
+nope.Playing = true
+nope.Pitch = 1
+nope.Volume = 10
+
+nope2.Name = "nope2"
+nope2.Parent = Chat_
+nope2.SoundId = "rbxassetid://9041745502"
+nope2.Looped = false
+nope2.Playing = false
+nope2.Pitch = 1
+nope2.Volume = 1.069
+
+static.Name = "static"
+static.Parent = Chat_
+static.SoundId = "rbxassetid://5547866547"
+static.Looped = false
+static.Playing = false
+static.Pitch = 1
+static.Volume = 7
+
+-- Scripts:
+
+local function CJOI_fake_script() -- Chat_.LocalScript 
+	local script = Instance.new('LocalScript', Chat_)
+
+	if not game:IsLoaded() then
+		game.Loaded:Wait()
+	end
+
+	game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()
+
+	script.Parent:WaitForChild("obama").Visible = true;
+	game:GetService("Players").LocalPlayer.PlayerGui:SetTopbarTransparency(0);
+	script.Parent:WaitForChild("nope"):Play();
+	while true do
+		wait("3.8");
+		if script.Parent.nope.TimePosition >= 0 then
+			break;
+		end;
+	end;
+	for v1 = 1, 10 do
+		script.Parent.obama.ImageTransparency = script.Parent.obama.ImageTransparency + 0.1;
+		wait("");
+	end;
+	script.Parent.obama.ZIndex = 0;
+	while true do
+		wait("4.5");
+		if script.Parent.nope.TimePosition >= 0 then
+			break;
+		end;			
+	end;
+	for v2 = 1, 10 do
+		script.Parent.obunga.ImageTransparency = script.Parent.obunga.ImageTransparency - 0.1;
+		wait(".1");
+	end;
+	wait("0")
+	script.Parent.help.ImageTransparency = 0;
+	while true do
+		wait("");
+		if script.Parent.nope.TimePosition >= 0 then
+			break;
+		end;
+	end;
+	script.Parent.nope2:Play();
+	spawn(function()
+		while script.Parent.nope2.Playing == true do
+			wait(math.random(1, 7));
+			script.Parent.static:Play();
+			script.Parent.help.ZIndex = 2;
+			wait(".3");
+			script.Parent.help.ZIndex = 0;
+			script.Parent.static:Stop();	
+		end;
+	end);
+	while true do
+		wait("1");
+		if script.Parent.nope2.Playing == false then
+			break;
+		end;
+	end;
+	game:GetService("Players").LocalPlayer.PlayerGui:SetTopbarTransparency(0.5);
+	script.Parent:Destroy();
+	Instance.new("Hint", workspace.Terrain).Text = "Obunga is still here. You are not safe.";
+
+	
+end
+coroutine.wrap(CJOI_fake_script)()
